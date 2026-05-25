@@ -1,0 +1,22 @@
+# Netlify Configuration File
+# Configuración premium para el despliegue automático de Apex Nova Studio
+
+[build]
+  # Define la carpeta que contiene el sitio estático a publicar
+  publish = "web"
+
+# Cabeceras HTTP avanzadas para maximizar la seguridad y optimizar el rendimiento SEO
+[[headers]]
+  for = "/*"
+    [headers.values]
+      X-Frame-Options = "DENY"
+      X-Content-Type-Options = "nosniff"
+      Referrer-Policy = "strict-origin-when-cross-origin"
+      # CSP optimizado para cargar recursos locales y tipografías externas de Google Fonts de forma segura
+      Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; media-src 'self' blob:; img-src 'self' data:; script-src 'self' 'unsafe-inline';"
+
+# Configuración de caché avanzada para recursos estáticos (auditoría Lighthouse al 100%)
+[[headers]]
+  for = "/assets/*"
+    [headers.values]
+      Cache-Control = "public, max-age=31536000, immutable"
