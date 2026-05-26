@@ -1425,3 +1425,90 @@ textarea:disabled {
         gap: 1.5rem;
     }
 }
+
+/* ========================================================================== */
+/* RESPONSIVE FIXES                                                           */
+/* ========================================================================== */
+
+/* Evita desbordes horizontales */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Textos fluidos */
+.hero-title {
+    font-size: clamp(2.2rem, 6vw, 4rem);
+}
+
+.section-title {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+}
+
+/* Navigation pills responsive */
+.contextual-subnav ul {
+    flex-wrap: wrap;
+}
+
+/* Header de servicios adaptable */
+@media (max-width: 992px) {
+
+    .services-header-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Ajustes celulares pequeños */
+@media (max-width: 480px) {
+
+    .hero-section {
+        padding: 8rem 1rem 4rem;
+    }
+
+    .main-content {
+        padding: 3rem 1rem;
+    }
+
+    .header-container {
+        padding: 0.9rem 1rem;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .service-card-core,
+    .bento-column-flow,
+    .contact-section-core,
+    .phase-card-core,
+    .aside-card-core {
+        padding: 1.5rem;
+    }
+
+    .bento-image-area {
+        min-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
