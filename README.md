@@ -9,8 +9,8 @@ A continuación, se presentan los accesos directos a cada semana de desarrollo:
 | Semana | Descripción | Enlace al Proyecto |
 | :--- | :--- | :--- |
 | **Semana 01** | Apex Nova Studio - Estructura W3C | [🔗 Ver Proyecto](https://apexnovastudio.netlify.app) |
-| **Semana 02** | [Fundamentos de Programación Web] | [🔗 Ver Proyecto](actividad2htmlcss.netlify.app) |
-| **Semana 02** | [Portafolio de Diseño y Estilos con CSS] | [🔗 Ver Proyecto](actividad3htmlcss.netlify.app) |
+| **Semana 02** | [Fundamentos de Programación Web] | [🔗 Ver Proyecto](https://actividad2htmlcss.netlify.app) |
+| **Semana 02** | [Portafolio de Diseño y Estilos con CSS] | [🔗 Ver Proyecto](https://actividad3htmlcss.netlify.app) |
 
 ---
 
