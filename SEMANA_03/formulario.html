@@ -1,87 +1,567 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Contacto</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Formulario de contacto con validación en JavaScript - Laboratorio Semana 3 Programación Web" />
+  <title>Formulario de Contacto | Lab Semana 3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ============================================
+       RESET & BASE
+    ============================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        .contenedor {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-            width: 350px;
-        }
+    :root {
+      --clr-bg:          #0d0f1a;
+      --clr-surface:     #13162b;
+      --clr-card:        #1a1f38;
+      --clr-border:      #272d50;
+      --clr-border-focus:#6c63ff;
+      --clr-primary:     #6c63ff;
+      --clr-primary-glow:rgba(108, 99, 255, 0.35);
+      --clr-accent:      #a78bfa;
+      --clr-success:     #34d399;
+      --clr-success-bg:  rgba(52, 211, 153, 0.12);
+      --clr-error:       #f87171;
+      --clr-error-bg:    rgba(248, 113, 113, 0.12);
+      --clr-warning:     #fbbf24;
+      --clr-text:        #e2e8f0;
+      --clr-muted:       #8892b0;
+      --radius-sm:       8px;
+      --radius-md:       14px;
+      --radius-lg:       20px;
+      --transition:      0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-        h1 {
-            text-align: center;
-            color: #333;
-            font-size: 22px;
-            margin-bottom: 20px;
-        }
+    html { scroll-behavior: smooth; }
 
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #555;
-        }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: var(--clr-bg);
+      color: var(--clr-text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      position: relative;
+      overflow-x: hidden;
+    }
 
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
+    /* ---- Animated background blobs ---- */
+    body::before,
+    body::after {
+      content: '';
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(90px);
+      opacity: 0.18;
+      pointer-events: none;
+      z-index: 0;
+    }
+    body::before {
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, #6c63ff, #a78bfa);
+      top: -120px; left: -120px;
+      animation: blobFloat 10s ease-in-out infinite alternate;
+    }
+    body::after {
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, #3b82f6, #06b6d4);
+      bottom: -100px; right: -100px;
+      animation: blobFloat 13s ease-in-out infinite alternate-reverse;
+    }
 
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-        }
+    @keyframes blobFloat {
+      0%   { transform: translate(0, 0) scale(1); }
+      100% { transform: translate(40px, 30px) scale(1.1); }
+    }
 
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    /* ============================================
+       LAYOUT WRAPPER
+    ============================================ */
+    .page-wrapper {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 520px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    /* ============================================
+       HEADER
+    ============================================ */
+    .page-header {
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(108, 99, 255, 0.15);
+      border: 1px solid rgba(108, 99, 255, 0.4);
+      color: var(--clr-accent);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.9rem;
+      border-radius: 100px;
+      margin-bottom: 0.9rem;
+    }
+
+    .badge span { font-size: 0.85rem; }
+
+    .page-header h1 {
+      font-size: clamp(1.6rem, 5vw, 2.1rem);
+      font-weight: 700;
+      background: linear-gradient(135deg, #e2e8f0 30%, var(--clr-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header p {
+      color: var(--clr-muted);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    /* ============================================
+       CARD
+    ============================================ */
+    .card {
+      background: var(--clr-card);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-lg);
+      padding: 2.2rem;
+      box-shadow:
+        0 0 0 1px rgba(108, 99, 255, 0.05),
+        0 25px 60px -15px rgba(0, 0, 0, 0.6),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      animation: slideUp 0.5s ease both;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ============================================
+       FORM ELEMENTS
+    ============================================ */
+    #contactoForm {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--clr-muted);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    label .icon {
+      font-size: 0.95rem;
+    }
+
+    .input-wrapper {
+      position: relative;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+      width: 100%;
+      background: var(--clr-surface);
+      border: 1.5px solid var(--clr-border);
+      border-radius: var(--radius-sm);
+      color: var(--clr-text);
+      font-family: inherit;
+      font-size: 0.95rem;
+      padding: 0.8rem 1rem;
+      outline: none;
+      transition:
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background var(--transition);
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus {
+      border-color: var(--clr-border-focus);
+      box-shadow: 0 0 0 3px var(--clr-primary-glow);
+      background: #171b35;
+    }
+
+    /* Floating label indicator */
+    input:not(:placeholder-shown) + .field-indicator,
+    input:focus + .field-indicator {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+
+    .field-indicator {
+      position: absolute;
+      left: 0; bottom: 0;
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(90deg, var(--clr-primary), var(--clr-accent));
+      border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: bottom;
+      transition: opacity var(--transition), transform var(--transition);
+    }
+
+    /* Error state */
+    .field-group.has-error input {
+      border-color: var(--clr-error);
+      box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.2);
+    }
+
+    .field-error {
+      font-size: 0.78rem;
+      color: var(--clr-error);
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      animation: shake 0.35s ease both;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25%       { transform: translateX(-5px); }
+      75%       { transform: translateX(5px); }
+    }
+
+    /* ============================================
+       SUBMIT BUTTON
+    ============================================ */
+    .btn-submit {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.95rem 1.5rem;
+      background: linear-gradient(135deg, #6c63ff, #a78bfa);
+      border: none;
+      border-radius: var(--radius-sm);
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.97rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+      overflow: hidden;
+      transition: transform var(--transition), box-shadow var(--transition);
+      margin-top: 0.4rem;
+    }
+
+    .btn-submit::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #a78bfa, #6c63ff);
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(108, 99, 255, 0.55);
+    }
+
+    .btn-submit:hover::before { opacity: 1; }
+
+    .btn-submit:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+
+    .btn-submit span { position: relative; z-index: 1; }
+
+    /* ============================================
+       TOAST NOTIFICATION
+    ============================================ */
+    #toast {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(120px);
+      min-width: 300px;
+      max-width: 90vw;
+      border-radius: var(--radius-md);
+      padding: 1rem 1.4rem;
+      font-size: 0.88rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      border: 1px solid transparent;
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), opacity 0.35s ease;
+      z-index: 999;
+    }
+
+    #toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #toast.success {
+      background: var(--clr-success-bg);
+      border-color: rgba(52, 211, 153, 0.4);
+      color: var(--clr-success);
+    }
+
+    #toast.error {
+      background: var(--clr-error-bg);
+      border-color: rgba(248, 113, 113, 0.4);
+      color: var(--clr-error);
+    }
+
+    #toast.warning {
+      background: rgba(251, 191, 36, 0.1);
+      border-color: rgba(251, 191, 36, 0.4);
+      color: var(--clr-warning);
+    }
+
+    .toast-icon { font-size: 1.3rem; flex-shrink: 0; }
+    .toast-text { line-height: 1.5; }
+    .toast-text strong { display: block; font-size: 0.95rem; margin-bottom: 0.1rem; }
+
+    /* ============================================
+       FOOTER
+    ============================================ */
+    .page-footer {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--clr-muted);
+      line-height: 1.7;
+    }
+
+    .page-footer span {
+      color: var(--clr-accent);
+      font-weight: 600;
+    }
+
+    /* ============================================
+       SUCCESS STATE (card overlay)
+    ============================================ */
+    .success-overlay {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .success-overlay.active { display: flex; }
+    #contactoForm.hidden { display: none; }
+
+    .checkmark-circle {
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      background: var(--clr-success-bg);
+      border: 2px solid var(--clr-success);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      animation: popIn 0.4s cubic-bezier(0.34,1.56,0.64,1) both;
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0); opacity: 0; }
+      to   { transform: scale(1); opacity: 1; }
+    }
+
+    .success-overlay h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--clr-success);
+    }
+
+    .success-overlay p { color: var(--clr-muted); font-size: 0.9rem; }
+
+    .btn-reset {
+      margin-top: 0.5rem;
+      background: transparent;
+      border: 1.5px solid var(--clr-border-focus);
+      color: var(--clr-accent);
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 0.6rem 1.5rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: background var(--transition), color var(--transition);
+    }
+
+    .btn-reset:hover {
+      background: rgba(108, 99, 255, 0.15);
+    }
+
+    /* ============================================
+       RESPONSIVE
+    ============================================ */
+    @media (max-width: 480px) {
+      .card { padding: 1.5rem; }
+    }
+  </style>
 </head>
 <body>
 
-    <div class="contenedor">
-        <h1>Formulario de Contacto</h1>
+  <div class="page-wrapper">
 
-        <form id="contactoForm">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+    <!-- Header -->
+    <header class="page-header">
+      <div class="badge">
+        <span>🎓</span> Programación Web · Semana 3
+      </div>
+      <h1>Formulario de Contacto</h1>
+      <p>Completa el formulario con tus datos.<br>Todos los campos son obligatorios.</p>
+    </header>
 
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" placeholder="Ingresa tu correo" required>
+    <!-- Card with form -->
+    <main>
+      <div class="card">
 
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad" placeholder="Ingresa tu edad" required>
+        <!-- Form (required by guide: id="contactoForm") -->
+        <form id="contactoForm" novalidate>
 
-            <button type="submit">Enviar</button>
+          <!-- Campo: Nombre -->
+          <div class="field-group" id="group-nombre">
+            <label for="nombre">
+              <span class="icon">👤</span> Nombre completo
+            </label>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ej. Juan Pérez"
+                required
+                autocomplete="name"
+              />
+              <div class="field-indicator"></div>
+            </div>
+          </div>
+
+          <!-- Campo: Correo electrónico -->
+          <div class="field-group" id="group-correo">
+            <label for="correo">
+              <span class="icon">✉️</span> Correo electrónico
+            </label>
+            <div class="input-wrapper">
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="Ej. juan@correo.com"
+                required
+                autocomplete="email"
+              />
+              <div class="field-indicator"></div>
+            </div>
+          </div>
+
+          <!-- Campo: Edad -->
+          <div class="field-group" id="group-edad">
+            <label for="edad">
+              <span class="icon">🎂</span> Edad
+            </label>
+            <div class="input-wrapper">
+              <input
+                type="number"
+                id="edad"
+                name="edad"
+                placeholder="Ej. 21"
+                min="1"
+                max="120"
+                required
+              />
+              <div class="field-indicator"></div>
+            </div>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn-submit" id="btn-enviar">
+            <span>✈️ Enviar formulario</span>
+          </button>
+
         </form>
-    </div>
 
-    <script src="validacion.js"></script>
+        <!-- Success overlay (shown after successful submit) -->
+        <div class="success-overlay" id="success-overlay" role="alert" aria-live="polite">
+          <div class="checkmark-circle">✅</div>
+          <h2>¡Formulario enviado!</h2>
+          <p id="success-message">Gracias por participar.<br>Tus datos fueron recibidos correctamente.</p>
+          <button class="btn-reset" id="btn-reset" type="button">
+            Enviar otro registro
+          </button>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      Laboratorio · Tema 3 — Validación con JavaScript<br>
+      Curso: <span>Programación Web</span>
+    </footer>
+
+  </div>
+
+  <!-- Toast notification container -->
+  <div id="toast" role="alert" aria-live="assertive">
+    <span class="toast-icon" id="toast-icon"></span>
+    <div class="toast-text">
+      <strong id="toast-title"></strong>
+      <span id="toast-body"></span>
+    </div>
+  </div>
+
+  <!-- External validation script (required by guide) -->
+  <script src="validacion.js"></script>
+
 </body>
 </html>
