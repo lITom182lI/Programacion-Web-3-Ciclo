@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio con Grid y Flexbox</title>
+    <style>
+        /* ==========================================================
+           1. ESTILOS GENERALES Y LIMPIEZA
+           ========================================================== */
+        * {
+            box-sizing: border-box;
+            /* Evita que el padding rompa los tamaños */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            /* Tipografía limpia */
+        }
+
+        body {
+            background-color: #f4f4f9;
+            padding: 40px 20px;
+        }
+
+        /* ==========================================================
+           2. MACRO-ARQUITECTURA CON CSS GRID
+           El Grid se encarga del esqueleto externo de la página.
+           ========================================================== */
+        .contenedor-grid {
+            display: grid;
+            /* Definimos 3 filas automáticas: header, contenido, footer */
+            grid-template-rows: auto auto auto;
+            gap: 20px;
+            /* Separación uniforme entre las filas del grid */
+            max-width: 900px;
+            margin: 0 auto;
+            /* Centra el bloque entero en la pantalla */
+        }
+
+        /* Componentes básicos del Grid */
+        header {
+            background-color: #34495e;
+            /* Azul oscuro corporativo */
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        main {
+            background-color: #ecf0f1;
+            /* Gris muy claro */
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        /* ==========================================================
+           3. MICRO-ARQUITECTURA CON CSS FLEXBOX
+           Flexbox se encarga de alinear los elementos internos.
+           ========================================================== */
+
+        /* A. Menú de Navegación Flexible */
+        .menu-flex {
+            display: flex;
+            /* Activa el contenedor elástico */
+            justify-content: center;
+            /* Centra los botones en la línea */
+            gap: 15px;
+            /* Espacio entre los botones */
+            list-style: none;
+            background-color: #bdc3c7;
+            /* Fondo gris para la barra */
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .menu-flex a {
+            background-color: #2980b9;
+            /* Azul del botón */
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .menu-flex a:hover {
+            background-color: #1f618d;
+            /* Azul oscuro al pasar el mouse */
+        }
+
+        /* B. Tarjetas Informativas Flexibles */
+        .tarjetas-container {
+            display: flex;
+            flex-wrap: wrap;
+            /* Permite que bajen de fila si no hay espacio */
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .tarjeta-individual {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #bdc3c7;
+            border-radius: 8px;
+            /* flex: crece (1) | encoge (1) | tamaño mínimo base (200px) */
+            flex: 1 1 200px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Estilos de texto interno de las tarjetas */
+        .perfil-titulo {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .perfil-descripcion {
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .tarjeta-individual h3 {
+            color: #2980b9;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .tarjeta-individual p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- El contenedor principal funciona como un GRID (Tablero) -->
+    <div class="contenedor-grid">
+
+        <!-- Celda 1 del Grid: Cabecera -->
+        <header>
+            <h1>Portafolio de Estudiante en Diseño y Estilos con CSS</h1>
+        </header>
+
+        <!-- Navegación funciona internamente con FLEXBOX -->
+        <nav>
+            <ul class="menu-flex">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Celda 2 del Grid: Contenido Principal -->
+        <main>
+            <h2 class="perfil-titulo">Estudiante UPN - Grupo 6</h2>
+            <p class="perfil-descripcion">Somos estudiantes del curso de Programación web de la carrera de Ingenieria de
+                Software en la UPN. Este portafolio demuestra el aprendizaje en el desarrollo de temas como Diseño
+                Responsivo, Responsabilidad Ética y Flexbox y Grid.</p>
+
+            <!-- Las tarjetas funcionan internamente con FLEXBOX -->
+            <div class="tarjetas-container">
+                <div class="tarjeta-individual">
+                    <h3>Diseño Responsivo</h3>
+                    <p>Instrumento de democratización digital que asegura el acceso óptimo desde cualquier dispositivo, adaptando la interfaz automáticamente al usuario.</p>
+                </div>
+                <div class="tarjeta-individual">
+                    <h3>Responsabilidad Ética</h3>
+                    <p>Implica reconocer que la inclusión digital no es opcional; se deben construir interfaces accesibles que pongan la técnica al servicio de la inclusión humana.</p>
+                </div>
+                <div class="tarjeta-individual">
+                    <h3>Flexbox y Grid</h3>
+                    <p>Herramientas de control dimensional. Flexbox maneja elementos en un solo eje, mientras que Grid permite estructurar la arquitectura bidimensional de la página.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Celda 3 del Grid: Pie de página -->
+        <footer>
+            <p>Gracias por revisar nuestro trabajo - Actividad 3</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
