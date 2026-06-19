@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Recibo de Agua</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a6b9a;
+            border-bottom: 2px solid #1a6b9a;
+            padding-bottom: 10px;
+        }
+
+        .contenedor {
+            background-color: white;
+            max-width: 450px;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 4px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 18px;
+            width: 100%;
+            padding: 10px;
+            background-color: #1a6b9a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #145477;
+        }
+
+        .resultado {
+            margin-top: 20px;
+            background-color: #d6eaf8;
+            border-left: 4px solid #1a6b9a;
+            padding: 15px;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .resultado p {
+            margin: 6px 0;
+            font-size: 15px;
+            color: #1a3a4a;
+        }
+
+        .resultado p span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicio 1: Recibo de Consumo de Agua</h1>
+
+    <div class="contenedor">
+
+        <label for="lecturaActual">Lectura actual del medidor (m³):</label>
+        <input type="number" id="lecturaActual" placeholder="Ej: 350">
+
+        <label for="lecturaAnterior">Lectura anterior del medidor (m³):</label>
+        <input type="number" id="lecturaAnterior" placeholder="Ej: 320">
+
+        <label for="tarifa">Tarifa por m³ consumido (S/):</label>
+        <input type="number" id="tarifa" placeholder="Ej: 2.50" step="0.01">
+
+        <button onclick="calcular()">Calcular</button>
+
+        <div class="resultado" id="resultado">
+            <p>Consumo: <span id="consumo"></span> m³</p>
+            <p>Valor a pagar: <span id="pago"></span></p>
+        </div>
+
+    </div>
+
+    <script src="ejercicio1.js"></script>
+
+</body>
+</html>

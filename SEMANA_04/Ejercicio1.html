@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f7f6;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        #contador {
+            font-size: 80px;
+            color: #333;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.1s, background 0.3s;
+            margin: 0 10px;
+        }
+
+        button:active { transform: scale(0.95); }
+
+        .btn-up { background-color: #27ae60; color: white; }
+        .btn-up:hover { background-color: #219150; }
+
+        .btn-down { background-color: #e74c3c; color: white; }
+        .btn-down:hover { background-color: #c0392b; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Contador Interactivo</h2>
+        <div id="contador">0</div>
+        <div>
+            <button class="btn-up" onclick="cambiar(2)">Subir (+2)</button>
+            <button class="btn-down" onclick="cambiar(-1)">Bajar (-1)</button>
+        </div>
+    </div>
+
+    <script>
+        let cuenta = 0;
+        function cambiar(valor) {
+            cuenta += valor;
+            document.getElementById('contador').innerText = cuenta;
+        }
+    </script>
+</body>
+</html>
