@@ -1,0 +1,1463 @@
+[
+  {
+    "id": "1",
+    "nombre": "Monedero Tie Dye Morado y Turquesa",
+    "precio": 14.00,
+    "desc": "Monedero Billabong con estampado tie dye en tonos morado y turquesa, ideal para llevar monedas y tarjetas.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Lona con panel de cuero sintético"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MONEDERO/20230227_165334.jpg",
+    "origen": "Importado",
+    "categoria": "Monedero"
+  },
+  {
+    "id": "2",
+    "nombre": "Monedero Mickey Black & Red",
+    "precio": 13.00,
+    "desc": "Monedero Billabong con estampado de siluetas de Mickey Mouse en blanco y rojo sobre fondo negro.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Lona con panel de cuero sintético"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MONEDERO/20230227_165345.jpg",
+    "origen": "Importado",
+    "categoria": "Monedero"
+  },
+  {
+    "id": "3",
+    "nombre": "Monedero Galaxia Geométrica Azul",
+    "precio": 14.00,
+    "desc": "Monedero Billabong con estampado geométrico estilo conchas y galaxia en tonos azules y morados.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Lona con panel de cuero sintético"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MONEDERO/20230227_165356.jpg",
+    "origen": "Importado",
+    "categoria": "Monedero"
+  },
+  {
+    "id": "4",
+    "nombre": "Monedero Peace & Love Blanco",
+    "precio": 13.00,
+    "desc": "Monedero Billabong blanco con símbolos de la paz en negro, estilo retro hippie.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Lona con panel de cuero sintético"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MONEDERO/20230227_165404.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MONEDERO/20230227_165419.jpg"],
+    "origen": "Importado",
+    "categoria": "Monedero"
+  },
+  {
+    "id": "5",
+    "nombre": "Monedero Verde Militar",
+    "precio": 12.00,
+    "desc": "Monedero Billabong en lona verde militar liso, combinado con panel de cuero sintético negro.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Lona con panel de cuero sintético"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MONEDERO/20230227_165430.jpg",
+    "origen": "Nacional",
+    "categoria": "Monedero"
+  },
+  {
+    "id": "6",
+    "nombre": "Monedero Bows Azul",
+    "precio": 13.00,
+    "desc": "Monedero Billabong en tono azul grisáceo con estampado de moñitos (lazos) negros.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Lona con panel de cuero sintético"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MONEDERO/20230227_165442.jpg",
+    "origen": "Importado",
+    "categoria": "Monedero"
+  },
+  {
+    "id": "7",
+    "nombre": "Monedero Verde Menta",
+    "precio": 12.00,
+    "desc": "Monedero Billabong en lona verde menta liso, combinado con panel de cuero sintético negro.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Lona con panel de cuero sintético"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MONEDERO/20230227_165450.jpg",
+    "origen": "Nacional",
+    "categoria": "Monedero"
+  },
+  {
+    "id": "8",
+    "nombre": "Cartera Cruzada Acolchada Negra",
+    "precio": 38.00,
+    "desc": "Cartera cruzada acolchada en negro con costuras estilo rómbico y broche de seguridad.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Nylon acolchado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTERAS/20220704_164905_mfnr.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/CARTERAS/20220704_164841_mfnr.jpg"],
+    "origen": "Importado",
+    "categoria": "Cartera"
+  },
+  {
+    "id": "9",
+    "nombre": "Cartera Cruzada Acolchada Camel",
+    "precio": 38.00,
+    "desc": "Cartera cruzada acolchada en color camel/beige con costuras estilo rómbico y broche de seguridad.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Nylon acolchado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTERAS/20220704_164841_mfnr.jpg",
+    "origen": "Importado",
+    "categoria": "Cartera"
+  },
+  {
+    "id": "10",
+    "nombre": "Cartera Cruzada Gris Audifore",
+    "precio": 40.00,
+    "desc": "Cartera cruzada de uso diario en gris, con bolsillo frontal y correa ajustable.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster resistente"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTERAS/20220704_170457_mfnr.jpg",
+    "origen": "Importado",
+    "categoria": "Cartera"
+  },
+  {
+    "id": "11",
+    "nombre": "Cartera Cruzada Beige Yuesite",
+    "precio": 40.00,
+    "desc": "Cartera cruzada multibolsillos en beige claro, marca Yuesite, ideal para salidas casuales.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster resistente"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTERAS/20220704_170600_mfnr.jpg",
+    "origen": "Importado",
+    "categoria": "Cartera"
+  },
+  {
+    "id": "12",
+    "nombre": "Cartera Kipling Style Verde Olivo",
+    "precio": 42.00,
+    "desc": "Cartera cruzada estilo Kipling en verde olivo, ligera y resistente al agua, con dije decorativo.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Nylon crinkle"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTERAS/20220704_170737_mfnr.jpg",
+    "origen": "Importado",
+    "categoria": "Cartera"
+  },
+  {
+    "id": "13",
+    "nombre": "Cartera Kipling Style Rosa",
+    "precio": 42.00,
+    "desc": "Cartera cruzada estilo Kipling en rosa palo, ligera y resistente al agua, con dije decorativo.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Nylon crinkle"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTERAS/20220704_170819.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/CARTERAS/20220704_170737_mfnr.jpg"],
+    "origen": "Importado",
+    "categoria": "Cartera"
+  },
+  {
+    "id": "14",
+    "nombre": "Cartera Cruzada Gris Yuesite",
+    "precio": 40.00,
+    "desc": "Cartera cruzada en gris oscuro con vivos negros y cierres dobles, marca Yuesite.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster resistente"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTERAS/20220704_171536_mfnr.jpg",
+    "origen": "Importado",
+    "categoria": "Cartera"
+  },
+  {
+    "id": "15",
+    "nombre": "Lonchera Térmica Verde Olivo",
+    "precio": 28.00,
+    "desc": "Lonchera térmica en verde olivo con asa reforzada, ideal para mantener los alimentos frescos.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster térmico aislante"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/LONCHERA/20220405_121937_mfnr.jpg",
+    "origen": "Nacional",
+    "categoria": "Lonchera"
+  },
+  {
+    "id": "16",
+    "nombre": "Lonchera Térmica Negra",
+    "precio": 28.00,
+    "desc": "Lonchera térmica en negro con detalle de cuero sintético, compacta y de fácil transporte.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster térmico aislante"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/LONCHERA/20220405_121950_mfnr.jpg",
+    "origen": "Nacional",
+    "categoria": "Lonchera"
+  },
+  {
+    "id": "17",
+    "nombre": "Lonchera Térmica Billabong Gris",
+    "precio": 32.00,
+    "desc": "Lonchera térmica de la marca Billabong en gris oscuro, con doble compartimento y asa acolchada.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster térmico aislante"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/LONCHERA/20220405_122008_mfnr.jpg",
+    "origen": "Importado",
+    "categoria": "Lonchera"
+  },
+  {
+    "id": "18",
+    "nombre": "Llavero Spy x Family x3",
+    "precio": 10.00,
+    "desc": "Set de llaveros de los personajes de Spy x Family (Loid, Yor y Anya) con correa tejida.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "PVC y metal"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/LLAVEROS/20230227_165745.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/LLAVEROS/20230227_165748.jpg"],
+    "origen": "Importado",
+    "categoria": "Llavero"
+  },
+  {
+    "id": "19",
+    "nombre": "Llavero Unicornios Pastel x4",
+    "precio": 9.00,
+    "desc": "Set de llaveros de unicornios en colores pastel con correa de silicona.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "PVC y metal"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/LLAVEROS/20230227_165903.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/LLAVEROS/20230227_165906.jpg"],
+    "origen": "Importado",
+    "categoria": "Llavero"
+  },
+  {
+    "id": "20",
+    "nombre": "Llavero Avengers x4",
+    "precio": 10.00,
+    "desc": "Set de llaveros de superhéroes Avengers (Venom, Wolverine, Thor y Hulk) en argollas metálicas.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "PVC y metal"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/LLAVEROS/20230227_170020.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/LLAVEROS/20230227_170023.jpg"],
+    "origen": "Importado",
+    "categoria": "Llavero"
+  },
+  {
+    "id": "21",
+    "nombre": "Llavero Personajes Amarillos x4",
+    "precio": 9.00,
+    "desc": "Set de llaveros amarillos: Pikachu, Minion, Bob Esponja y Lisa Simpson, con correa de cinta.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "PVC y metal"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/LLAVEROS/20230227_170157.jpg",
+    "origen": "Importado",
+    "categoria": "Llavero"
+  },
+  {
+    "id": "22",
+    "nombre": "Llavero Looney Tunes x4",
+    "precio": 10.00,
+    "desc": "Set de llaveros de Looney Tunes (Taz, Bugs Bunny, Silvestre y Patolino) con correa de cinta.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "PVC y metal"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/LLAVEROS/20230227_170245.jpg",
+    "origen": "Importado",
+    "categoria": "Llavero"
+  },
+  {
+    "id": "23",
+    "nombre": "Llavero Dragon Ball Z x2",
+    "precio": 9.00,
+    "desc": "Set de llaveros de Dragon Ball Z (Trunks y Piccolo) con correa de cinta estampada.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "PVC y metal"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/LLAVEROS/20230227_170349.jpg",
+    "origen": "Importado",
+    "categoria": "Llavero"
+  },
+  {
+    "id": "24",
+    "nombre": "Llavero Toy Story x3",
+    "precio": 9.00,
+    "desc": "Set de llaveros de Toy Story (Hamm, Buzz Lightyear y Rex) con dije de campana.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "PVC y metal"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/LLAVEROS/20230227_170434.jpg",
+    "origen": "Importado",
+    "categoria": "Llavero"
+  },
+  {
+    "id": "25",
+    "nombre": "Llavero Baby Yoda x2",
+    "precio": 10.00,
+    "desc": "Set de llaveros de Baby Yoda (The Mandalorian) con correa trenzada y dije de campana.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "PVC y metal"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/LLAVEROS/20230227_170548.jpg",
+    "origen": "Importado",
+    "categoria": "Llavero"
+  },
+  {
+    "id": "26",
+    "nombre": "Cartuchera Chanchitos Turquesa",
+    "precio": 18.00,
+    "desc": "Cartuchera doble compartimento con estampado de chanchitos sobre fondo turquesa y jaladera naranja.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_151055_mfnr.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_151114_mfnr.jpg", "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_152046.jpg"],
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "27",
+    "nombre": "Cartuchera Osito Kawaii Rosa",
+    "precio": 17.00,
+    "desc": "Cartuchera con estampado de osito kawaii en amarillo y verde sobre fondo rosa pastel.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_151907.jpg",
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "28",
+    "nombre": "Cartuchera Bandas de Rock",
+    "precio": 18.00,
+    "desc": "Cartuchera estampada con logos de bandas de rock (Nirvana, Beatles, Green Day) sobre fondo azul marino.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_152635.jpg",
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "29",
+    "nombre": "Cartuchera BT21 Chimmy",
+    "precio": 19.00,
+    "desc": "Cartuchera con estampado del personaje Chimmy de BT21 (línea BTS) en tono crema.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_152822.jpg",
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "30",
+    "nombre": "Cartuchera Gatitos Leopardo Mostaza",
+    "precio": 18.00,
+    "desc": "Cartuchera con estampado de gatitos sobre fondo leopardo mostaza, jaladera verde turquesa.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_153037.jpg",
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "31",
+    "nombre": "Cartuchera Collage Vintage",
+    "precio": 17.00,
+    "desc": "Cartuchera con estampado tipo collage de fotografías vintage en blanco y negro sobre fondo verde-azulado.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_153547.jpg",
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "32",
+    "nombre": "Cartuchera Manga Roja",
+    "precio": 18.00,
+    "desc": "Cartuchera con estampado estilo manga/cómic en blanco y negro con acentos rojos.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_153826.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_153938.jpg"],
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "33",
+    "nombre": "Cartuchera Chibis Anime Pastel",
+    "precio": 18.00,
+    "desc": "Cartuchera con estampado de personajes chibi anime en tonos pastel sobre fondo crema.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_154151.jpg",
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "34",
+    "nombre": "Cartuchera Joystick Gamer",
+    "precio": 19.00,
+    "desc": "Cartuchera con estampado de controles de videojuego (joysticks) en tonos azul y gris.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_154516.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_154549.jpg"],
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "35",
+    "nombre": "Cartuchera Sailor Moon Rosa",
+    "precio": 19.00,
+    "desc": "Cartuchera con estampado de Sailor Moon en rosa pastel, con lunas y estrellas doradas.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_154847.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_154958.jpg"],
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "36",
+    "nombre": "Cartuchera Chibis Anime Celeste",
+    "precio": 18.00,
+    "desc": "Cartuchera con estampado de personajes chibi anime sobre fondo celeste.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_155114.jpg",
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "37",
+    "nombre": "Cartuchera Naruto Akatsuki",
+    "precio": 20.00,
+    "desc": "Cartuchera con símbolos de la aldea de Konoha y nubes Akatsuki de Naruto, sobre fondo azul petróleo.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_155234.jpg",
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "38",
+    "nombre": "Cartuchera Billabong Fuegos Artificiales",
+    "precio": 19.00,
+    "desc": "Cartuchera Billabong con estampado tipo fuegos artificiales en tonos morado, rosa y turquesa.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_155453.jpg",
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "39",
+    "nombre": "Cartuchera Billabong Hojas Tropicales",
+    "precio": 19.00,
+    "desc": "Cartuchera Billabong con estampado de hojas tropicales en tonos fucsia, turquesa y verde sobre azul marino.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_155702.jpg",
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "40",
+    "nombre": "Cartuchera Billabong Gris Plomo",
+    "precio": 16.00,
+    "desc": "Cartuchera Billabong lisa en gris plomo oscuro, diseño minimalista.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_155754.jpg",
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "41",
+    "nombre": "Cartuchera Billabong Negra Cierre Celeste",
+    "precio": 16.00,
+    "desc": "Cartuchera Billabong negra lisa con doble cierre celeste, diseño minimalista.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_155855.jpg",
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "42",
+    "nombre": "Cartuchera Billabong Azul Petróleo",
+    "precio": 16.00,
+    "desc": "Cartuchera Billabong lisa en azul petróleo, diseño minimalista con asa de mano.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/CARTUCHERAS/20230224_160053.jpg",
+    "origen": "Importado",
+    "categoria": "Cartuchera"
+  },
+  {
+    "id": "43",
+    "nombre": "Mochila Modelo Seven One Piece",
+    "precio": 75.00,
+    "desc": "Mochila de la línea exclusiva Modelo Seven con estampado de la calavera pirata de Mugiwara (One Piece). Diseño negro con detalle a color.",
+    "especificaciones": {
+      "capacidad": "22 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster reforzado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/1.png",
+    "galeria": ["/PROGRAMA/IMAGENES/one piece.png", "/PROGRAMA/IMAGENES/MOCHILAS/20230224_163648.jpg", "/PROGRAMA/IMAGENES/MOCHILAS/20230224_163707.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "44",
+    "nombre": "Mochila Modelo Seven Nezuko",
+    "precio": 75.00,
+    "desc": "Mochila de la línea exclusiva Modelo Seven con estampado de Nezuko (Demon Slayer/Kimetsu no Yaiba). Negra con bolsillo frontal rosado.",
+    "especificaciones": {
+      "capacidad": "22 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster reforzado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/2.png",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "45",
+    "nombre": "Mochila Modelo Seven Naruto",
+    "precio": 75.00,
+    "desc": "Mochila de la línea exclusiva Modelo Seven con el símbolo de la aldea oculta de la Hoja (Naruto). Diseño negro totalmente liso con el sello bordado.",
+    "especificaciones": {
+      "capacidad": "22 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster reforzado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/3.png",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230224_162146.jpg", "/PROGRAMA/IMAGENES/MOCHILAS/20230224_162212.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "46",
+    "nombre": "Mochila Modelo Seven Jujutsu Kaisen Gojo",
+    "precio": 80.00,
+    "desc": "Mochila de la línea exclusiva Modelo Seven con estampado de Satoru Gojo (Jujutsu Kaisen) que brilla en la oscuridad. Incluye porta laptop, cierres rey y bolsillo interno de malla.",
+    "especificaciones": {
+      "capacidad": "22 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster reforzado con estampado fluorescente"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/4.png",
+    "galeria": ["/PROGRAMA/IMAGENES/7.png", "/PROGRAMA/IMAGENES/MOCHILAS/20230224_160728.jpg", "/PROGRAMA/IMAGENES/MOCHILAS/20230224_160910.jpg", "/PROGRAMA/IMAGENES/MOCHILAS/20230224_164248.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "47",
+    "nombre": "Mochila Modelo Seven Game King",
+    "precio": 78.00,
+    "desc": "Mochila de la línea exclusiva Modelo Seven con estampado gamer \"Game King\" (mano con control de videojuego). Diseño negro con detalles grises.",
+    "especificaciones": {
+      "capacidad": "22 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster reforzado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/5.png",
+    "galeria": [
+      "/PROGRAMA/IMAGENES/8.png",
+      "/PROGRAMA/IMAGENES/MOCHILAS/20230224_163125.jpg",
+      "/PROGRAMA/IMAGENES/MOCHILAS/20230224_164524_mfnr.jpg",
+      "/PROGRAMA/IMAGENES/MOCHILAS/20230226_214932.jpg",
+      "/PROGRAMA/IMAGENES/MOCHILAS/20230226_215100.jpg",
+      "/PROGRAMA/IMAGENES/MOCHILAS/IMG-20230226-WA0021.jpg",
+      "/PROGRAMA/IMAGENES/MOCHILAS/IMG-20230226-WA0024.jpg",
+      "/PROGRAMA/IMAGENES/MOCHILAS/IMG-20230226-WA0029.jpg",
+      "/PROGRAMA/IMAGENES/MOCHILAS/IMG-20230226-WA0031.jpg"
+    ],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "48",
+    "nombre": "Mochila Modelo Seven Anime Girl Rosa",
+    "precio": 76.00,
+    "desc": "Mochila de la línea exclusiva Modelo Seven con estampado circular de personaje anime en rosa sobre fondo negro, bolsillo frontal con detalle rosado.",
+    "especificaciones": {
+      "capacidad": "22 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster reforzado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230224_162811.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230224_162709.jpg", "/PROGRAMA/IMAGENES/MOCHILAS/20230224_162734.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "49",
+    "nombre": "Mochila Modelo Seven Cyber Girl",
+    "precio": 76.00,
+    "desc": "Mochila de la línea exclusiva Modelo Seven con estampado de personaje anime estilo cibernético/futurista en rosa sobre fondo negro, bolsillo frontal rosado.",
+    "especificaciones": {
+      "capacidad": "22 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster reforzado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230224_161431.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230224_161743.jpg", "/PROGRAMA/IMAGENES/MOCHILAS/20230224_161835.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "50",
+    "nombre": "Mochila Billabong Maroon Acolchada",
+    "precio": 68.00,
+    "desc": "Mochila Billabong en color vino/maroon con costuras acolchadas tipo rombo y bolsillo frontal con cierre.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster acolchado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20200103_215651.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20220703_171736_mfnr.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "51",
+    "nombre": "Mochila Verde Clásica",
+    "precio": 55.00,
+    "desc": "Mochila clásica en verde con bolsillo frontal y detalle de cuero sintético en forma de rombo.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20200103_215847.jpg",
+    "origen": "Nacional",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "52",
+    "nombre": "Mochila Hojas Tropicales Azul y Naranja",
+    "precio": 60.00,
+    "desc": "Mochila con estampado de hojas tropicales en azul, verde y naranja sobre fondo blanco.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20220703_172600_mfnr.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "53",
+    "nombre": "Mochila BOBO Leopardo Verde",
+    "precio": 62.00,
+    "desc": "Mochila marca BOBO con estampado abstracto de hojas y leopardo en tonos verde, turquesa y amarillo.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20220703_172720_mfnr.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "54",
+    "nombre": "Mochila Abstracta Multicolor",
+    "precio": 58.00,
+    "desc": "Mochila con estampado abstracto geométrico en tonos azul, mostaza, vino y verde.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20220703_173005_mfnr.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "55",
+    "nombre": "Mochila Tie Dye Blanco y Negro Mármol",
+    "precio": 60.00,
+    "desc": "Mochila con estampado tie dye tipo mármol en blanco, gris y negro, diseño urbano sin parches.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20220703_173452_mfnr.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "56",
+    "nombre": "Mochila Billabong Petróleo Acolchada",
+    "precio": 68.00,
+    "desc": "Mochila Billabong en azul petróleo con costuras acolchadas tipo rombo y bolsillo frontal.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster acolchado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20220704_160238_mfnr.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "57",
+    "nombre": "Set Monederos Étnicos x4",
+    "precio": 15.00,
+    "desc": "Set de monederos pequeños con cinta étnica tejida, disponibles en beige, vino, turquesa y morado.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20220704_160702_mfnr.jpg",
+    "origen": "Importado",
+    "categoria": "Monedero"
+  },
+  {
+    "id": "58",
+    "nombre": "Cartera Cruzada Camel Acolchada",
+    "precio": 40.00,
+    "desc": "Cartera cruzada acolchada en color camel con broche de seguridad y correa ajustable.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster acolchado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20220704_162503_mfnr.jpg",
+    "origen": "Importado",
+    "categoria": "Cartera"
+  },
+  {
+    "id": "59",
+    "nombre": "Cartera Geométrica Holográfica",
+    "precio": 45.00,
+    "desc": "Cartera con textura geométrica tipo Bao Bao en acabado holográfico plateado y rosado.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "PVC geométrico"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20220704_165907_mfnr.jpg",
+    "origen": "Importado",
+    "categoria": "Cartera"
+  },
+  {
+    "id": "60",
+    "nombre": "Cartera Cruzada Azul Petróleo",
+    "precio": 40.00,
+    "desc": "Cartera cruzada acolchada en azul petróleo con costuras tipo rombo y bolsillo frontal con cierre.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster acolchado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20220704_170330_mfnr.jpg",
+    "origen": "Importado",
+    "categoria": "Cartera"
+  },
+  {
+    "id": "61",
+    "nombre": "Mochila Pipiriapj Cuero Negra",
+    "precio": 70.00,
+    "desc": "Mochila tipo cartera ejecutiva en cuero sintético negro con detalles café y asa de mano, marca Pipiriapj.",
+    "especificaciones": {
+      "capacidad": "15 Litros",
+      "compartimento_laptop": "Hasta 13 pulgadas",
+      "material": "Cuero sintético"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_144515.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230227_144526.jpg"],
+    "origen": "Importado",
+    "categoria": "Cartera"
+  },
+  {
+    "id": "62",
+    "nombre": "Cartera Clutch Terracota",
+    "precio": 35.00,
+    "desc": "Cartera clutch de cuero sintético en color terracota con hebilla metálica decorativa.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Cuero sintético"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_144646.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230227_144626.jpg"],
+    "origen": "Importado",
+    "categoria": "Cartera"
+  },
+  {
+    "id": "63",
+    "nombre": "Cartera Clutch Blanco y Rojo",
+    "precio": 35.00,
+    "desc": "Cartera clutch bicolor blanco y rojo con hebilla metálica decorativa.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Cuero sintético"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_144657.jpg",
+    "origen": "Importado",
+    "categoria": "Cartera"
+  },
+  {
+    "id": "64",
+    "nombre": "Mochila Tie Dye Morado y Turquesa",
+    "precio": 65.00,
+    "desc": "Mochila con estampado tie dye en tonos morado, turquesa y blanco, correas y vivos a juego.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_120738.jpg",
+    "galeria": [
+      "/PROGRAMA/IMAGENES/MOCHILAS/20230227_120738 (1).jpg",
+      "/PROGRAMA/IMAGENES/MOCHILAS/20230227_121301.jpg",
+      "/PROGRAMA/IMAGENES/MOCHILAS/20230227_121301 (1).jpg",
+      "/PROGRAMA/IMAGENES/MOCHILAS/20230227_142540.jpg",
+      "/PROGRAMA/IMAGENES/MOCHILAS/20230227_142734.jpg",
+      "/PROGRAMA/IMAGENES/MOCHILAS/20230227_143009.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_143654.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_143656.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_143904.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_144201.jpg"
+    ],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "65",
+    "nombre": "Mochila Tie Dye Mármol Blanco y Negro con Parches",
+    "precio": 65.00,
+    "desc": "Mochila con estampado tie dye tipo mármol en blanco y negro, con parches decorativos frontales (Thinking of You, Meow, Sorry Not Sorry).",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_141943.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230227_142129.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "66",
+    "nombre": "Mochila Tie Dye Mármol Gris sin Parches",
+    "precio": 63.00,
+    "desc": "Mochila con estampado tie dye tipo mármol en blanco, gris y negro, sin parches, bolsillo frontal con broches.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_143851.jpg",
+    "galeria": [
+      "/PROGRAMA/IMAGENES/MOCHILAS/20230227_143903.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_145255.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_145556.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_145731.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_145925.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_150050.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_150102.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_151543.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154722.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154727.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154736.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154737.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154740.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154744.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154832.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154851.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154859.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154901.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154903.jpg"
+    ],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "67",
+    "nombre": "Mochila Billabong Verde Menta Acolchada",
+    "precio": 68.00,
+    "desc": "Mochila Billabong en verde menta con costuras acolchadas tipo rombo y bolsillo frontal con cierre.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster acolchado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_144236.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230227_144342.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "68",
+    "nombre": "Mochila Porte Hojas Tropicales Turquesa",
+    "precio": 62.00,
+    "desc": "Mochila marca Porte con estampado de hojas tropicales en turquesa y negro, doble broche frontal.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_145443.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230227_145501.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "69",
+    "nombre": "Mochila Triptom Polka Dot con Pompones",
+    "precio": 58.00,
+    "desc": "Mochila marca Triptom con estampado de lunares blancos y negro, detalle de pompones blancos en el cierre.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_145831.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230227_145855.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "70",
+    "nombre": "Mochila Círculos Morado y Turquesa",
+    "precio": 58.00,
+    "desc": "Mochila con estampado de círculos concéntricos en morado, fucsia y turquesa, vivos en morado.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_150254.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "71",
+    "nombre": "Mochila Tribal YOU Morado",
+    "precio": 58.00,
+    "desc": "Mochila con estampado tribal/azteca multicolor sobre fondo morado, etiqueta \"YOU\".",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_150434.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "72",
+    "nombre": "Mochila Win Star Espinas de Pescado",
+    "precio": 60.00,
+    "desc": "Mochila marca Win Star con estampado divertido de espinas de pescado y globos de diálogo sobre fondo negro.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_150725.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "73",
+    "nombre": "Mochila Win Star Floral Azul",
+    "precio": 60.00,
+    "desc": "Mochila marca Win Star con estampado floral hawaiano en tonos azul, celeste y blanco.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_150810.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "74",
+    "nombre": "Mochila Yxing Azul Marino",
+    "precio": 60.00,
+    "desc": "Mochila marca Yxing en azul marino, lisa, con doble compartimento y detalle de cuero sintético negro.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_151114.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230227_151129.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "75",
+    "nombre": "Mochila Adidas Stellasport Azul",
+    "precio": 75.00,
+    "desc": "Mochila Adidas Stellasport en azul marino con correas decorativas rosa y fucsia.",
+    "especificaciones": {
+      "capacidad": "22 Litros",
+      "compartimento_laptop": "Hasta 15 pulgadas",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_151456.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230227_151532.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "76",
+    "nombre": "Mochila Triptom Geométrica con Flecos",
+    "precio": 60.00,
+    "desc": "Mochila marca Triptom con estampado geométrico azul, morado y mostaza, detalle de flecos multicolor.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_151905.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "77",
+    "nombre": "Mochila Kipling Girl Power Corazones",
+    "precio": 70.00,
+    "desc": "Mochila Kipling en rosa con estampado de corazones \"Girl Power\", incluye monito de peluche colgante.",
+    "especificaciones": {
+      "capacidad": "18 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Nylon crinkle"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_152127.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230227_152205.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "78",
+    "nombre": "Mochila Kipling Floral Azul Marino",
+    "precio": 70.00,
+    "desc": "Mochila Kipling con estampado floral en azul marino y gris.",
+    "especificaciones": {
+      "capacidad": "18 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Nylon crinkle"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_152452.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "79",
+    "nombre": "Mochila Winderflies Gatitos Petróleo",
+    "precio": 60.00,
+    "desc": "Mochila marca Winderflies en azul petróleo con ventana ilustrada de gatitos durmiendo.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster satinado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_152658.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230227_153011.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "80",
+    "nombre": "Mochila Nike Just Do It Fucsia",
+    "precio": 72.00,
+    "desc": "Mochila Nike en fucsia con logo \"Just Do It\" y swoosh blanco.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_153206.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "81",
+    "nombre": "Lonchera Mochilera Gráfica Azul y Roja",
+    "precio": 32.00,
+    "desc": "Lonchera tipo mochila con estampado gráfico urbano en azul y rojo, interior térmico aislante.",
+    "especificaciones": {
+      "capacidad": "No aplica",
+      "compartimento_laptop": "No aplica",
+      "material": "Poliéster térmico aislante"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_153405.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230227_153412.jpg", "/PROGRAMA/IMAGENES/MOCHILAS/20230227_153435.jpg"],
+    "origen": "Importado",
+    "categoria": "Lonchera"
+  },
+  {
+    "id": "82",
+    "nombre": "Mochila Gris Oscuro Minimalista",
+    "precio": 55.00,
+    "desc": "Mochila lisa en gris oscuro, diseño minimalista con asa superior reforzada.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_153737.jpg",
+    "origen": "Nacional",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "83",
+    "nombre": "Mochila BT21 Shooky Morada",
+    "precio": 65.00,
+    "desc": "Mochila con estampado del personaje Shooky de BT21 (línea BTS) en morado y blanco, dije colgante incluido.",
+    "especificaciones": {
+      "capacidad": "18 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_155006.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "84",
+    "nombre": "Mochila Verde Olivo con Dije Dreamcatcher",
+    "precio": 56.00,
+    "desc": "Mochila lisa en verde olivo con detalle de cuero sintético y dije colgante tipo atrapasueños con plumas.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Lona de algodón"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_155318.jpg",
+    "origen": "Nacional",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "85",
+    "nombre": "Mochila Negra Franja Tribal",
+    "precio": 56.00,
+    "desc": "Mochila lisa en negro con franja decorativa de estampado tribal/inca en tonos rojo, naranja y mostaza.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Lona de algodón"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_155600.jpg",
+    "origen": "Nacional",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "86",
+    "nombre": "Mochila Adidas Fucsia Clásica",
+    "precio": 72.00,
+    "desc": "Mochila Adidas en fucsia con franjas y logo en morado.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_155710.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "87",
+    "nombre": "Mochila Mett Cuero Vino",
+    "precio": 68.00,
+    "desc": "Mochila de cuero sintético en color vino, marca Mett, con doble correa frontal y cierre superior.",
+    "especificaciones": {
+      "capacidad": "16 Litros",
+      "compartimento_laptop": "Hasta 13 pulgadas",
+      "material": "Cuero sintético"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_160450.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "88",
+    "nombre": "Mochila Never Say Never Negra",
+    "precio": 58.00,
+    "desc": "Mochila negra con frase \"Never Say Never\" en letras estilo galaxia multicolor.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_161007.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230227_161039.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "89",
+    "nombre": "Mochila Yxing Verde Olivo",
+    "precio": 60.00,
+    "desc": "Mochila marca Yxing en verde olivo, lisa, con bolsillo frontal y placa metálica de marca.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_161346.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "90",
+    "nombre": "Mochila BOBO Negra Clásica",
+    "precio": 58.00,
+    "desc": "Mochila marca BOBO en negro liso, diseño clásico con doble correa y dije colgante.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_161637.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230227_161647.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "91",
+    "nombre": "Mochila BOBO Azul Marino Clásica",
+    "precio": 58.00,
+    "desc": "Mochila marca BOBO en azul marino liso, diseño clásico con doble correa.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_161918.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "92",
+    "nombre": "Mochila Kipling Negra con Monito",
+    "precio": 70.00,
+    "desc": "Mochila Kipling en negro con costuras decorativas y monito de peluche colgante.",
+    "especificaciones": {
+      "capacidad": "18 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Nylon crinkle"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_162202.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "93",
+    "nombre": "Mochila Tribal Naranja y Azul",
+    "precio": 60.00,
+    "desc": "Mochila con estampado tribal simétrico en naranja, azul y negro, dije colgante \"Love\".",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster estampado"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_162915.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "94",
+    "nombre": "Mochila Camuflada Damvers",
+    "precio": 62.00,
+    "desc": "Mochila táctica con estampado camuflado multicolor, marca Damvers, tejido tipo molle.",
+    "especificaciones": {
+      "capacidad": "20 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster resistente"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_162652.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "95",
+    "nombre": "Mochila US Army Camuflaje Digital",
+    "precio": 65.00,
+    "desc": "Mochila táctica con estampado camuflaje digital y parche \"U.S. Army\", broches y correas reforzadas.",
+    "especificaciones": {
+      "capacidad": "22 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster resistente"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_163209.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230227_163219.jpg", "/PROGRAMA/IMAGENES/MOCHILAS/20230227_163423.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "96",
+    "nombre": "Mochila Meng Huo Mostaza con Charms",
+    "precio": 58.00,
+    "desc": "Mochila Meng Huo en color mostaza con malla frontal y charms de peluche (oso y conejito).",
+    "especificaciones": {
+      "capacidad": "18 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_163657.jpg",
+    "galeria": ["/PROGRAMA/IMAGENES/MOCHILAS/20230227_163751.jpg"],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "97",
+    "nombre": "Mochila Meng Huo Crema con Charms",
+    "precio": 58.00,
+    "desc": "Mochila Meng Huo en color crema con malla frontal y charms de peluche (oso y conejito blanco).",
+    "especificaciones": {
+      "capacidad": "18 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_164033.jpg",
+    "origen": "Importado",
+    "categoria": "Mochila"
+  },
+  {
+    "id": "98",
+    "nombre": "Mochila Meng Huo Lila con Charms",
+    "precio": 58.00,
+    "desc": "Mochila Meng Huo en color lila/lavanda con malla frontal y charms de peluche (oso y conejito), muy popular entre jóvenes por su estilo kawaii.",
+    "especificaciones": {
+      "capacidad": "18 Litros",
+      "compartimento_laptop": "Hasta 14 pulgadas",
+      "material": "Poliéster"
+    },
+    "imagen": "/PROGRAMA/IMAGENES/MOCHILAS/20230227_164420.jpg",
+    "galeria": [
+      "/PROGRAMA/IMAGENES/MODELO/20230302_152428.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_152459.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_152519.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_152701.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_152703.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_153214.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154219.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154230.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154319.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154321.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154324.jpg",
+      "/PROGRAMA/IMAGENES/MODELO/20230302_154508.jpg"
+    ],
+    "origen": "Importado",
+    "categoria": "Mochila"
+  }
+]
