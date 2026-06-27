@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de mochilas de emprendimiento local. Modelos nacionales e importados.">
+    <title>Catálogo - Mochilas Locales</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link visually-hidden-focusable p-3 bg-white text-dark position-absolute top-0 start-0 z-3">Saltar al contenido principal</a>
+    <!-- Navegación Accesible -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="../../PROGRAMA/IMAGENES/LOGO.png" alt="Logo de Mochilas Locales" width="40" height="40" class="me-2 rounded-circle" onerror="this.src='https://via.placeholder.com/40';">
+                <strong>Mochilas Locales</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ferias.html">Ubicación de Ferias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reserva.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Buscador -->
+    <div class="container mt-4 mb-5" id="main-content">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 class="h2 mb-3">Catálogo de Productos</h1>
+                <form class="d-flex" role="search" aria-label="Buscar mochilas" id="formBuscar">
+                    <input class="form-control me-2 form-control-lg" type="search" placeholder="Ej. Mochila para laptop 15 pulgadas..." aria-label="Término de búsqueda" id="inputBuscar">
+                    <button class="btn btn-success btn-lg" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Filtros Nacional / Importado (C2) -->
+        <div class="row mb-3">
+            <div class="col-12 d-flex gap-2 flex-wrap">
+                <span class="fw-bold d-flex align-items-center">Filtrar por origen:</span>
+                <button type="button" class="btn btn-outline-primary btn-sm btn-filtro active" data-filtro="Todos">Todos</button>
+                <button type="button" class="btn btn-outline-primary btn-sm btn-filtro" data-filtro="Nacional">Nacional</button>
+                <button type="button" class="btn btn-outline-primary btn-sm btn-filtro" data-filtro="Importado">Importado</button>
+            </div>
+        </div>
+
+        <!-- Filtros por Categoría -->
+        <div class="row mb-4">
+            <div class="col-12 d-flex gap-2 flex-wrap">
+                <span class="fw-bold d-flex align-items-center">Filtrar por categoría:</span>
+                <button type="button" class="btn btn-outline-success btn-sm btn-categoria active" data-categoria="Todas">Todas</button>
+                <button type="button" class="btn btn-outline-success btn-sm btn-categoria" data-categoria="Mochila">Mochilas</button>
+                <button type="button" class="btn btn-outline-success btn-sm btn-categoria" data-categoria="Cartera">Carteras</button>
+                <button type="button" class="btn btn-outline-success btn-sm btn-categoria" data-categoria="Cartuchera">Cartucheras</button>
+                <button type="button" class="btn btn-outline-success btn-sm btn-categoria" data-categoria="Llavero">Llaveros</button>
+                <button type="button" class="btn btn-outline-success btn-sm btn-categoria" data-categoria="Lonchera">Loncheras</button>
+                <button type="button" class="btn btn-outline-success btn-sm btn-categoria" data-categoria="Monedero">Monederos</button>
+            </div>
+        </div>
+
+        <!-- Grid de Productos -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="catalogoProductos">
+            <!-- Los productos se cargarán dinámicamente aquí -->
+            <div class="col-12 text-center" id="loading">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Cargando...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/catalogo.js"></script>
+</body>
+</html>
