@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MC Backpack - Sobre nosotros. Mochilas importadas y creadas a tu estilo desde Lima.">
-    <title>Sobre Nosotros - MC BACKPACK</title>
+    <meta name="description" content="MC Backpack - Contacto. ¿Tienes una colaboración, prensa o duda sobre tu pedido? Escríbenos.">
+    <title>Contacto - MC BACKPACK</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cart.css">
-    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
     <a href="#main-content" class="visually-hidden-focusable">Saltar al contenido principal</a>
@@ -38,8 +38,8 @@
             <ul class="navbar-links" id="navbarLinks">
                 <li><a href="index.html" class="nav-link-custom">Inicio</a></li>
                 <li><a href="tienda.html" class="nav-link-custom">Tienda</a></li>
-                <li><a href="nosotros.html" class="nav-link-custom active" aria-current="page">Sobre</a></li>
-                <li><a href="contacto.html" class="nav-link-custom">Contacto</a></li>
+                <li><a href="nosotros.html" class="nav-link-custom">Sobre</a></li>
+                <li><a href="contacto.html" class="nav-link-custom active" aria-current="page">Contacto</a></li>
                 <li><a href="ubicacion.html" class="nav-link-custom">Ubicación</a></li>
             </ul>
             <div class="navbar-icons">
@@ -66,65 +66,47 @@
     </nav>
 
     <main id="main-content">
-        <!-- ========== HERO NOSOTROS ========== -->
-        <section class="nosotros-hero">
-            <div class="nosotros-hero-bg">
-                <img src="assets/nosotros_hero.png" alt="Fondo MC Backpack" class="nosotros-bg-img" loading="lazy">
-                <div class="nosotros-gradient-overlay"></div>
-            </div>
-            <div class="nosotros-hero-content">
-                <p class="nosotros-subtitle">Sobre MC Backback</p>
-                <h1 class="nosotros-title">Mochilas importadas y creadas<br>a tu estilo.</h1>
+        <!-- ========== HERO CONTACTO ========== -->
+        <section class="contacto-hero">
+            <div class="contacto-hero-content">
+                <h1 class="contacto-hero-title">Hablemos.</h1>
+                <p class="contacto-hero-desc">¿Tienes una colaboración, prensa o duda sobre tu pedido? Escríbenos y respondemos en menos de 24h.</p>
             </div>
         </section>
 
-        <!-- ========== ABOUT CONTENT ========== -->
-        <section class="nosotros-content">
-            <div class="nosotros-container">
-                <div class="nosotros-grid">
-                    <div class="nosotros-text">
-                        <h2 class="nosotros-heading">¿Quiénes somos?</h2>
-                        <p class="nosotros-paragraph">
-                            MC Backpack nació con la idea de ofrecer mochilas, carteras y accesorios de alta calidad 
-                            que combinen estilo urbano con funcionalidad. Somos una marca independiente con sede en Lima, 
-                            Perú, que trabaja con artesanos locales y también importa diseños exclusivos de todo el mundo.
-                        </p>
-                        <p class="nosotros-paragraph">
-                            Cada producto que ofrecemos está cuidadosamente seleccionado o creado pensando en quienes 
-                            viven la ciudad al máximo. Creemos que un accesorio no solo complementa tu look, 
-                            sino que cuenta una historia.
-                        </p>
-
-                        <h2 class="nosotros-heading mt-48">Nuestra Misión</h2>
-                        <p class="nosotros-paragraph">
-                            Carga tus metas, nosotros ponemos la resistencia. Buscamos democratizar el diseño 
-                            exclusivo, haciendo que piezas únicas sean accesibles para todos. Desde ediciones 
-                            limitadas hasta clásicos reinventados, cada producto tiene un propósito.
-                        </p>
+        <!-- ========== FORMULARIO DE CONTACTO ========== -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-input" id="nombre" name="nombre" required aria-required="true">
+                            <div class="invalid-msg">Por favor ingresa tu nombre (mínimo 3 caracteres).</div>
+                        </div>
+                        <div class="form-group half">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-input" id="email" name="email" required aria-required="true">
+                            <div class="invalid-msg">Por favor ingresa un correo electrónico válido.</div>
+                        </div>
                     </div>
-                    <div class="nosotros-image">
-                        <img src="assets/nosotros_producto.png" alt="Producto MC Backpack" class="nosotros-product-img" loading="lazy">
+                    <div class="form-row">
+                        <div class="form-group full">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <input type="text" class="form-input" id="asunto" name="asunto" required aria-required="true">
+                            <div class="invalid-msg">Por favor ingresa el asunto de tu mensaje.</div>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Values -->
-                <div class="nosotros-values">
-                    <div class="value-card">
-                        <div class="value-icon">🎨</div>
-                        <h3 class="value-title">Diseño Único</h3>
-                        <p class="value-desc">Cada pieza es seleccionada o diseñada para destacar entre la multitud.</p>
+                    <div class="form-row">
+                        <div class="form-group full">
+                            <label for="mensaje" class="form-label">Tu mensaje</label>
+                            <textarea class="form-input form-textarea" id="mensaje" name="mensaje" rows="5" required aria-required="true"></textarea>
+                            <div class="invalid-msg">Por favor ingresa tu mensaje (mínimo 10 caracteres).</div>
+                        </div>
                     </div>
-                    <div class="value-card">
-                        <div class="value-icon">🌍</div>
-                        <h3 class="value-title">Global & Local</h3>
-                        <p class="value-desc">Combinamos diseños importados con elaboración artesanal peruana.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">💚</div>
-                        <h3 class="value-title">Sostenibilidad</h3>
-                        <p class="value-desc">Priorizamos materiales duraderos y procesos responsables.</p>
-                    </div>
-                </div>
+                    <button type="submit" class="contact-submit-btn" id="submitBtn">Enviar mensaje</button>
+                </form>
+                <div id="formMessage" class="form-message d-none" role="alert"></div>
             </div>
         </section>
     </main>
@@ -161,6 +143,6 @@
     <script src="js/theme.js"></script>
     <script src="js/search.js"></script>
     <script src="js/cart.js"></script>
-    <script src="js/nosotros.js"></script>
+    <script src="js/contacto.js"></script>
 </body>
 </html>

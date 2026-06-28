@@ -165,3 +165,25 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== MODO CLARO (el hero permanece oscuro) ===== */
+html[data-theme="light"] .nosotros-content {
+    background-color: #f7f6f1;
+}
+
+html[data-theme="light"] .nosotros-paragraph {
+    color: #1c1c12;
+}
+
+html[data-theme="light"] .value-card {
+    background: linear-gradient(135deg, rgba(115, 116, 23, 0.12) 0%, rgba(0, 0, 0, 0.04) 100%);
+    border-color: rgba(115, 116, 23, 0.4);
+}
+
+html[data-theme="light"] .value-title {
+    color: #1c1c12;
+}
+
+html[data-theme="light"] .value-desc {
+    color: #5a5a4d;
+}

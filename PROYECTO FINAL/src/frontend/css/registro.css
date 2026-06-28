@@ -1,0 +1,163 @@
+/* =========================================================
+   MC BACKPACK – Registro / Login
+   ========================================================= */
+
+.registro-body {
+    background-color: var(--dark-bg);
+}
+
+.registro-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.registro-card {
+    width: 100%;
+    max-width: 440px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    padding: 40px 32px;
+    text-align: center;
+}
+
+.registro-logo {
+    display: inline-flex;
+    margin-bottom: 32px;
+}
+
+.registro-title {
+    font-family: var(--font-accent);
+    font-weight: 800;
+    font-size: 28px;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.registro-subtitle {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--grey-light);
+    margin-bottom: 24px;
+}
+
+.registro-sent-to {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--primary-light);
+    margin-bottom: 16px;
+}
+
+.registro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.registro-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.registro-code-input {
+    text-align: center;
+    letter-spacing: 0.4em;
+    font-size: 22px;
+}
+
+.registro-submit-btn {
+    width: 100%;
+    font-size: 18px;
+}
+
+.registro-legal {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--grey-light);
+    margin-top: 24px;
+}
+
+.registro-legal a {
+    color: var(--primary-light);
+    text-decoration: underline;
+}
+
+.registro-link-btn {
+    margin-top: 20px;
+    background: none;
+    border: none;
+    color: var(--grey-light);
+    font-family: var(--font-body);
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.registro-success-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--primary-light);
+    color: var(--white);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.registro-home-link {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+#demoCodeMessage {
+    margin-bottom: 8px;
+}
+
+#demoCodeMessage.d-none {
+    display: none;
+}
+
+/* ===== MODO CLARO ===== */
+html[data-theme="light"] .registro-body {
+    background-color: #f7f6f1;
+}
+
+html[data-theme="light"] .registro-card {
+    background-color: #ffffff;
+    border-color: #e0ddcf;
+}
+
+html[data-theme="light"] .registro-title {
+    color: #1c1c12;
+}
+
+html[data-theme="light"] .registro-subtitle,
+html[data-theme="light"] .registro-legal,
+html[data-theme="light"] .registro-link-btn {
+    color: #5a5a4d;
+}
+
+html[data-theme="light"] .registro-checkbox {
+    color: #1c1c12;
+}
+
+html[data-theme="light"] .registro-form .form-input {
+    color: #1c1c12;
+    border-color: #c9c5b3;
+    background-color: #ffffff;
+}
+
+html[data-theme="light"] .registro-form .form-label {
+    color: #1c1c12;
+}

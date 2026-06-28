@@ -25,23 +25,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ===== Filtro de Categorías =====
+    // ===== Filtro de Categorías + Búsqueda por nombre =====
     const tagButtons = document.querySelectorAll('.tag-btn');
     const shopItems = document.querySelectorAll('.shop-item');
+    const shopSearchInput = document.getElementById('shopSearchInput');
 
     const applyFilters = () => {
         const activeTag = document.querySelector('.tag-btn.tag-active');
         const filterValue = activeTag ? activeTag.getAttribute('data-filter') : 'all';
         const maxPrice = parseInt(document.getElementById('priceRange').value, 10);
+        const searchTerm = (shopSearchInput?.value || '').toLowerCase().trim();
 
         shopItems.forEach(item => {
             const itemCat = item.getAttribute('data-category');
             const itemPrice = parseInt(item.getAttribute('data-price'), 10);
+            const itemName = (item.querySelector('.shop-name')?.textContent || '').toLowerCase();
 
             const matchesCat = (filterValue === 'all' || itemCat === filterValue);
             const matchesPrice = itemPrice <= maxPrice;
+            const matchesSearch = (searchTerm === '' || itemName.includes(searchTerm));
 
-            if (matchesCat && matchesPrice) {
+            if (matchesCat && matchesPrice && matchesSearch) {
                 item.classList.remove('hidden');
             } else {
                 item.classList.add('hidden');
@@ -56,6 +60,18 @@ document.addEventListener('DOMContentLoaded', () => {
             applyFilters();
         });
     });
+
+    if (shopSearchInput) {
+        // Si llegamos desde la barra de búsqueda del navbar (tienda.html?q=termino), precargar el término
+        const urlParams = new URLSearchParams(window.location.search);
+        const queryTerm = urlParams.get('q');
+        if (queryTerm) {
+            shopSearchInput.value = queryTerm;
+        }
+
+        shopSearchInput.addEventListener('keyup', applyFilters);
+        applyFilters();
+    }
 
     // ===== Slider de Precio =====
     const priceRange = document.getElementById('priceRange');

@@ -49,6 +49,31 @@
     letter-spacing: 1px;
 }
 
+.sidebar-label-mt {
+    margin-top: 28px;
+}
+
+.sidebar-search-input {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--primary-light);
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.sidebar-search-input::placeholder {
+    color: var(--grey-light);
+}
+
+.sidebar-search-input:focus {
+    border-color: var(--accent-yellow);
+}
+
 .sidebar-tags {
     display: flex;
     flex-wrap: wrap;
@@ -224,4 +249,42 @@
     .tienda-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* ===== MODO CLARO ===== */
+html[data-theme="light"] .tienda-header {
+    background-color: #f7f6f1;
+}
+
+html[data-theme="light"] .tienda-title {
+    color: #1c1c12;
+}
+
+html[data-theme="light"] .tienda-body {
+    background-color: #f7f6f1;
+}
+
+html[data-theme="light"] .sidebar-label,
+html[data-theme="light"] .price-label {
+    color: #1c1c12;
+}
+
+html[data-theme="light"] .tag-btn {
+    color: #1c1c12;
+    border-color: #1c1c12;
+}
+
+html[data-theme="light"] .tag-btn:hover,
+html[data-theme="light"] .tag-btn.tag-active {
+    background-color: #1c1c12;
+    color: #f7f6f1;
+}
+
+html[data-theme="light"] .sidebar-search-input {
+    color: #1c1c12;
+    border-color: var(--primary-light);
+}
+
+html[data-theme="light"] .sidebar-search-input::placeholder {
+    color: #8a8a7a;
 }

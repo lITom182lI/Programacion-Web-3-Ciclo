@@ -1,0 +1,34 @@
+/* =========================================================
+   MC BACKPACK – Página Contacto
+   ========================================================= */
+
+.contacto-hero {
+    padding: 170px var(--page-padding) 60px;
+    background: linear-gradient(270deg, var(--primary-accent) 23%, rgba(0, 0, 0, 1) 75%);
+}
+
+.contacto-hero-content {
+    max-width: 900px;
+}
+
+.contacto-hero-title {
+    font-family: var(--font-accent);
+    font-weight: 800;
+    font-size: clamp(40px, 6vw, 72px);
+    color: var(--white);
+    margin-bottom: 24px;
+}
+
+.contacto-hero-desc {
+    font-family: var(--font-quando);
+    font-size: clamp(16px, 1.5vw, 22px);
+    color: var(--white);
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+@media (max-width: 576px) {
+    .contacto-hero {
+        padding: 130px 20px 40px;
+    }
+}
