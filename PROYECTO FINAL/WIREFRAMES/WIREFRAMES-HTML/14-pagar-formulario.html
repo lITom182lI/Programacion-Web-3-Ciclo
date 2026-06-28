@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <title>Wireframe 14 — PAGAR (Formulario) | MC BACKPACK</title>
+  <link rel="stylesheet" href="wireframe-kit.css">
+</head>
+<body class="page-wrap">
+
+  <header class="wf-header">
+    <div class="container header-inner">
+      <div class="wf-logo">MC BACKPACK</div>
+      <nav class="wf-nav">
+        <a href="01-inicio.html">Inicio</a>
+        <a href="02-tienda.html">Tienda</a>
+        <a href="04-nosotros.html">Sobre</a>
+        <a href="05-contacto.html">Contacto</a>
+        <a href="16-ubicacion.html">Ubicación</a>
+      </nav>
+      <div class="wf-icons">
+        <div class="wf-icon">🔍</div>
+        <div class="wf-icon">👤</div>
+        <div class="wf-icon">🛒</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container mt-32">
+
+      <!-- Logo y pasos -->
+      <div class="flex-center mb-8">
+        <div class="wf-auth-logo-circle" style="width:60px; height:60px; font-size:1rem;">MC</div>
+      </div>
+      <div class="wf-checkout-steps flex-center mb-32">
+        <span class="wf-step active">Carrito</span>
+        <span class="wf-step active">Información</span>
+        <span class="wf-step">Envío</span>
+        <span class="wf-step">Pago</span>
+      </div>
+
+      <div class="col-2-1">
+
+        <!-- Columna Izquierda: Formulario -->
+        <div>
+
+          <!-- CONTACTO -->
+          <div class="wf-box">
+            <h3>Contacto</h3>
+            <div class="flex-between mb-8" style="font-size:0.85rem;">
+              <span>¿Ya tienes una cuenta?</span>
+              <a href="06-registro-1.html" style="color:#333; text-decoration:underline; font-size:0.85rem;">Iniciar sesión</a>
+            </div>
+            <div class="wf-form-group">
+              <label>Correo Electrónico</label>
+              <input class="wf-input" type="email" placeholder="Correo Electrónico">
+            </div>
+            <div class="wf-checkbox">
+              <input type="checkbox">
+              <span>Enviarme novedades y ofertas por correo electrónico</span>
+            </div>
+          </div>
+
+          <!-- ENTREGA -->
+          <div class="wf-box">
+            <h3>Entrega</h3>
+            <div class="wf-form-group">
+              <label>País/Región</label>
+              <select class="wf-select">
+                <option>País/Región</option>
+                <option>Perú</option>
+              </select>
+            </div>
+            <div class="wf-form-row">
+              <div class="wf-form-group">
+                <label>Nombre</label>
+                <input class="wf-input" type="text" placeholder="Nombre">
+              </div>
+              <div class="wf-form-group">
+                <label>Apellido</label>
+                <input class="wf-input" type="text" placeholder="Apellido">
+              </div>
+            </div>
+            <div class="wf-form-group">
+              <label>DNI</label>
+              <input class="wf-input" type="text" placeholder="DNI">
+            </div>
+            <div class="wf-form-group">
+              <label>Dirección</label>
+              <input class="wf-input" type="text" placeholder="Dirección">
+            </div>
+            <div class="wf-form-group">
+              <label>Casa, apartamento, etc (opcional)</label>
+              <input class="wf-input" type="text" placeholder="Casa, apartamento, etc (opcional)">
+            </div>
+            <div class="wf-form-row-3">
+              <div class="wf-form-group">
+                <label>Código postal (opcional)</label>
+                <input class="wf-input" type="text" placeholder="Código postal">
+              </div>
+              <div class="wf-form-group">
+                <label>Ciudad</label>
+                <input class="wf-input" type="text" placeholder="Ciudad">
+              </div>
+              <div class="wf-form-group">
+                <label>Región</label>
+                <input class="wf-input" type="text" placeholder="Región">
+              </div>
+            </div>
+            <div class="wf-checkbox">
+              <input type="checkbox">
+              <span>Guardar mi información y consultar más rápidamente la próxima vez</span>
+            </div>
+            <div class="wf-checkbox">
+              <input type="checkbox">
+              <span>Enviarme novedades y ofertas por SMS</span>
+            </div>
+          </div>
+
+          <!-- MÉTODOS DE ENVÍO -->
+          <div class="wf-box">
+            <h3>Métodos de envío</h3>
+            <p style="font-size:0.85rem; color:#888;">Ingresa tu dirección de envío para ver los métodos disponibles.</p>
+          </div>
+
+          <!-- PAGO -->
+          <div class="wf-box">
+            <h3>Pago</h3>
+            <p style="font-size:0.8rem; color:#888; margin-bottom:16px;">Todas las transacciones son seguras y están encriptadas.</p>
+
+            <div style="border:1px solid var(--border); border-radius:var(--radius); padding:16px;">
+              <div style="font-weight:700; margin-bottom:6px;">Mercado Pago</div>
+              <p style="font-size:0.8rem; color:#888;">Se te redirigirá a Mercado Pago para que completes la compra.</p>
+            </div>
+          </div>
+
+          <!-- DIRECCIÓN DE FACTURACIÓN -->
+          <div class="wf-box">
+            <h3>Dirección de facturación</h3>
+            <div class="wf-radio">
+              <input type="radio" name="billing" checked>
+              <span>La misma dirección de envío</span>
+            </div>
+            <div class="wf-radio">
+              <input type="radio" name="billing">
+              <span>Usar una dirección de facturación distinta</span>
+            </div>
+          </div>
+
+          <!-- TEXTOS LEGALES -->
+          <div class="mb-16" style="font-size:0.75rem; color:#aaa;">
+            Si continúas, aceptas nuestros
+            <a href="09-terminos.html" style="color:#555; text-decoration:underline;">Términos del servicio</a>
+            y la
+            <a href="10-politicas.html" style="color:#555; text-decoration:underline;">Política de privacidad</a>
+          </div>
+
+          <a href="13-pagar-confirmacion.html" class="wf-btn wf-btn-full wf-btn-lg" style="display:block; text-align:center; margin-bottom:48px;">Pagar ahora</a>
+
+        </div>
+
+        <!-- Columna Derecha: Resumen -->
+        <div>
+          <div class="wf-box" style="position:sticky; top:80px;">
+            <h3>Resumen del pedido</h3>
+            <div class="wf-cart-item">
+              <div class="ph-img" style="width:80px; height:80px; border-radius:8px; flex-shrink:0;"></div>
+              <div style="flex:1; padding-left:12px;">
+                <div style="font-size:0.85rem; font-weight:700;">[Producto]</div>
+                <div style="font-size:0.85rem; color:#888;">[Descripción]</div>
+                <div style="font-weight:900;">S/ —</div>
+              </div>
+            </div>
+            <hr style="border:none; border-top:1px solid #eee; margin:16px 0;">
+            <div class="flex-between mb-8">
+              <span style="font-size:0.85rem;">Subtotal</span>
+              <span style="font-size:0.85rem;">S/ —</span>
+            </div>
+            <div class="flex-between mb-16">
+              <span style="font-size:0.85rem;">Envío</span>
+              <span style="font-size:0.85rem; color:#888;">Calculado</span>
+            </div>
+            <div class="flex-between" style="font-weight:900;">
+              <span>Total</span>
+              <span>S/ —</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end col-2-1 -->
+    </div>
+  </main>
+
+</body>
+</html>

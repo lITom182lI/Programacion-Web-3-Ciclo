@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1 - Bootstrap Local</title>
+    <!-- Instalación Local: Cargando Bootstrap desde la carpeta física -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1 fw-bold">Mi Sitio Web</span>
+        </div>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <main class="container mt-5">
+        
+        <!-- Jumbotron -->
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-sm border">
+            <div class="container-fluid py-5 text-center">
+                <h1 class="display-5 fw-bold text-primary">¡Hola Mundo con Bootstrap!</h1>
+                <p class="col-md-8 mx-auto fs-4 text-muted">
+                    Este es nuestro primer ejercicio utilizando los archivos compilados de Bootstrap alojados localmente.
+                </p>
+                <!-- Botón que dispara el evento JS -->
+                <button class="btn btn-primary btn-lg mt-3" type="button" onclick="mostrarAlerta()">
+                    Probar JavaScript
+                </button>
+            </div>
+        </div>
+
+        <!-- Sistema de Rejilla (Grid) con 3 Tarjetas -->
+        <div class="row g-4 mb-5">
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <h4 class="card-title fw-bold text-dark">Paso 1</h4>
+                        <p class="card-text text-muted">Descargar los archivos compilados CSS y JS de la web oficial.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <h4 class="card-title fw-bold text-dark">Paso 2</h4>
+                        <p class="card-text text-muted">Vincular los archivos localmente en el head y al final del body.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <h4 class="card-title fw-bold text-dark">Paso 3</h4>
+                        <p class="card-text text-muted">¡Empezar a diseñar utilizando las clases utilitarias de Bootstrap!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Instalación Local: Cargando JavaScript de Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Lógica local interactiva -->
+    <script src="script.js"></script>
+</body>
+</html>
