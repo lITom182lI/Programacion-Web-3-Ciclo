@@ -1,0 +1,167 @@
+/* =========================================================
+   MC BACKPACK – Nosotros Page Styles (Figma-Accurate)
+   ========================================================= */
+
+/* Hero Nosotros */
+.nosotros-hero {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding-top: 90px;
+}
+
+.nosotros-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.nosotros-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.nosotros-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 53%, rgba(22, 22, 22, 0.77) 65%, rgba(45, 45, 45, 0.54) 78%, rgba(55, 55, 55, 0) 100%);
+}
+
+.nosotros-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 60px var(--page-padding) 80px;
+    width: 100%;
+}
+
+.nosotros-subtitle {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.nosotros-title {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: clamp(36px, 6vw, 96px);
+    color: var(--white);
+    line-height: 1.15;
+}
+
+/* About Content */
+.nosotros-content {
+    background-color: var(--dark);
+    padding: 80px var(--page-padding);
+}
+
+.nosotros-container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.nosotros-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.nosotros-heading {
+    font-family: var(--font-primary);
+    font-weight: 800;
+    font-size: clamp(28px, 3vw, 40px);
+    color: var(--primary-light);
+    margin-bottom: 20px;
+}
+
+.nosotros-paragraph {
+    font-family: var(--font-primary);
+    font-weight: 300;
+    font-size: clamp(16px, 1.5vw, 24px);
+    color: var(--white);
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+.mt-48 {
+    margin-top: 48px;
+}
+
+.nosotros-product-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    display: block;
+}
+
+/* Values */
+.nosotros-values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.value-card {
+    background: linear-gradient(135deg, rgba(48, 48, 23, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%);
+    border: 1px solid rgba(115, 116, 23, 0.3);
+    border-radius: 20px;
+    padding: 40px 32px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary-light);
+}
+
+.value-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.value-title {
+    font-family: var(--font-primary);
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+.value-desc {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--grey-light);
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .nosotros-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros-product-img {
+        max-width: 300px;
+    }
+
+    .nosotros-values {
+        grid-template-columns: 1fr;
+    }
+}

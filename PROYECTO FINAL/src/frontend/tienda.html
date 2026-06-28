@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MC Backpack - Tienda de mochilas, carteras y accesorios. Diseños importados y de elaboración propia.">
+    <title>Tienda - MC BACKPACK</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700;800&family=Monoton&family=Montserrat:wght@300;400;500;600;800;900&family=Questrial&family=Raleway:wght@600;800;900&family=Quando&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tienda.css">
+</head>
+<body>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar al contenido principal</a>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar-custom" aria-label="Navegación Principal">
+        <div class="navbar-inner">
+            <div class="navbar-logo">
+                <a href="index.html" aria-label="Ir al inicio">
+                    <div class="logo-circle">
+                        <span class="logo-text">MC</span>
+                    </div>
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="navbar-links" id="navbarLinks">
+                <li><a href="index.html" class="nav-link-custom">Inicio</a></li>
+                <li><a href="tienda.html" class="nav-link-custom active" aria-current="page">Tienda</a></li>
+                <li><a href="nosotros.html" class="nav-link-custom">Sobre</a></li>
+                <li><a href="index.html#contacto" class="nav-link-custom">Contacto</a></li>
+                <li><a href="#" class="nav-link-custom">Ubicación</a></li>
+            </ul>
+            <div class="navbar-icons">
+                <a href="#" aria-label="Buscar"><img src="assets/icon_search.png" alt="Buscar" class="nav-icon nav-icon-sm"></a>
+                <a href="#" aria-label="Mi cuenta"><img src="assets/icon_user.png" alt="Usuario" class="nav-icon nav-icon-md"></a>
+                <a href="#" aria-label="Carrito de compras"><img src="assets/icon_cart.png" alt="Carrito" class="nav-icon nav-icon-lg"></a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- ========== TIENDA HEADER ========== -->
+        <section class="tienda-header">
+            <div class="tienda-header-content">
+                <h1 class="tienda-title">Tienda</h1>
+            </div>
+        </section>
+
+        <!-- ========== TIENDA BODY ========== -->
+        <section class="tienda-body">
+            <div class="tienda-layout">
+                <!-- Sidebar Filtros -->
+                <aside class="tienda-sidebar" aria-label="Filtros de productos">
+                    <h2 class="sidebar-label">CATEGORÍA</h2>
+
+                    <div class="sidebar-tags">
+                        <button class="tag-btn tag-active" data-filter="all">Todos</button>
+                        <button class="tag-btn" data-filter="mochilas">Mochilas</button>
+                        <button class="tag-btn" data-filter="carteras">Carteras</button>
+                        <button class="tag-btn" data-filter="accesorios">Accesorios</button>
+                    </div>
+
+                    <!-- Price range slider -->
+                    <div class="sidebar-price">
+                        <label for="priceRange" class="price-label">Precio máximo: <span id="priceValue">S/ 200</span></label>
+                        <input type="range" class="price-slider" id="priceRange" min="0" max="200" value="200" aria-label="Filtro de precio máximo">
+                        <div class="price-track">
+                            <div class="price-fill" id="priceFill"></div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Product Grid -->
+                <div class="tienda-grid" id="tiendaGrid">
+                    <!-- Row 1 -->
+                    <article class="shop-card shop-item" data-category="mochilas" data-price="45">
+                        <div class="shop-img-wrap">
+                            <img src="assets/tienda_hades-619f96.png" alt="Mochila HADES" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Elaboración Propia</span>
+                            <h3 class="shop-name">HADES</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 45.00</span>
+                                <span class="shop-cat">Mochilas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="shop-card shop-item" data-category="carteras" data-price="98">
+                        <div class="shop-img-wrap">
+                            <img src="assets/tienda_lux-c533ba.png" alt="Cartera LUX" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Importada</span>
+                            <h3 class="shop-name">LUX</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 98.00</span>
+                                <span class="shop-cat">Carteras</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="17">
+                        <div class="shop-img-wrap">
+                            <img src="assets/tienda_snoopy-22756a.png" alt="Snoopy llavero" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Importada</span>
+                            <h3 class="shop-name">Snoopy llavero</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 17.00</span>
+                                <span class="shop-cat">Accesorios</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="20">
+                        <div class="shop-img-wrap">
+                            <img src="assets/mochila3.png" alt="Creeper Minecraft" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Importada</span>
+                            <h3 class="shop-name">Creeper (Minecraft)</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 20.00</span>
+                                <span class="shop-cat">Accesorios</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Row 2 -->
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="5">
+                        <div class="shop-img-wrap">
+                            <img src="assets/tienda_pines.png" alt="Pines" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Importadas</span>
+                            <h3 class="shop-name">Pines</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 5.00</span>
+                                <span class="shop-cat">Accesorios</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="10">
+                        <div class="shop-img-wrap">
+                            <img src="assets/tienda_gatitos-526597.png" alt="Gatitos cute" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Importadas</span>
+                            <h3 class="shop-name">Gatitos cute</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 10.00</span>
+                                <span class="shop-cat">Accesorios</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="11">
+                        <div class="shop-img-wrap">
+                            <img src="assets/articulo2-4973ae.png" alt="Cartuchera de Gato" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Importada</span>
+                            <h3 class="shop-name">Cartuchera de Gato</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 11.00</span>
+                                <span class="shop-cat">Accesorios</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="shop-card shop-item" data-category="mochilas" data-price="50">
+                        <div class="shop-img-wrap">
+                            <img src="assets/mochila4.png" alt="Tropicoqueta" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Elaboración Propia</span>
+                            <h3 class="shop-name">Tropicoqueta</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 50.00</span>
+                                <span class="shop-cat">Mochilas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Row 3 -->
+                    <article class="shop-card shop-item" data-category="carteras" data-price="65">
+                        <div class="shop-img-wrap">
+                            <img src="assets/cartera3-151d4b.png" alt="Jack Leopards Mug" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Elaboración Propia</span>
+                            <h3 class="shop-name">Jack Leopards Mug</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 65.00</span>
+                                <span class="shop-cat">Carteras</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="shop-card shop-item" data-category="mochilas" data-price="28">
+                        <div class="shop-img-wrap">
+                            <img src="assets/cartera2-5ad179.png" alt="THE ALBUM" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Importada</span>
+                            <h3 class="shop-name">THE ALBUM</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 28.00</span>
+                                <span class="shop-cat">Mochilas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="35">
+                        <div class="shop-img-wrap">
+                            <img src="assets/articulo1.png" alt="Charizard" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Elaboración propia</span>
+                            <h3 class="shop-name">Charizard</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 35.00</span>
+                                <span class="shop-cat">Accesorios</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="shop-card shop-item" data-category="carteras" data-price="105">
+                        <div class="shop-img-wrap">
+                            <img src="assets/cartera1-392919.png" alt="K-23 Deluxe" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Importada</span>
+                            <h3 class="shop-name">K-23 (Deluxe)</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 105.00</span>
+                                <span class="shop-cat">Carteras</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Row 4 -->
+                    <article class="shop-card shop-item" data-category="mochilas" data-price="37">
+                        <div class="shop-img-wrap">
+                            <img src="assets/mochila2-76f3c2.png" alt="Pink Aura" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Elaboración Propia</span>
+                            <h3 class="shop-name">Pink Aura</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 37.00</span>
+                                <span class="shop-cat">Mochilas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="100">
+                        <div class="shop-img-wrap">
+                            <img src="assets/mochila1.png" alt="Ositos onigiri" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Importada</span>
+                            <h3 class="shop-name">Ositos onigiri</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 100.00</span>
+                                <span class="shop-cat">Accesorios</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="25">
+                        <div class="shop-img-wrap">
+                            <img src="assets/articulo3-154dcc.png" alt="Cartuchera Básica" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Importada</span>
+                            <h3 class="shop-name">Cartuchera Básica</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 25.00</span>
+                                <span class="shop-cat">Accesorios</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="75">
+                        <div class="shop-img-wrap">
+                            <img src="assets/articulo4.png" alt="Next" class="shop-img" loading="lazy">
+                        </div>
+                        <div class="shop-info">
+                            <span class="shop-origin">Importada</span>
+                            <h3 class="shop-name">Next</h3>
+                            <div class="shop-bottom">
+                                <span class="shop-price">S/ 75.00</span>
+                                <span class="shop-cat">Accesorios</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3 class="footer-brand">MC BACKPACK</h3>
+                <p class="footer-slogan">Carga tus metas, nosotros ponemos la resistencia.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Ubicación"><img src="assets/icon_ubicacion-433143.png" alt="Ubicación" class="social-icon"></a>
+                    <a href="#" aria-label="Facebook"><img src="assets/icon_facebook-1d6074.png" alt="Facebook" class="social-icon"></a>
+                    <a href="#" aria-label="Instagram"><img src="assets/icon_instagram-e0a1a.png" alt="Instagram" class="social-icon"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <h4 class="footer-heading">MARCA</h4>
+                <ul class="footer-links">
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                    <li><a href="#">Envíos</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top d-none" aria-label="Volver arriba">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/tienda.js"></script>
+</body>
+</html>
