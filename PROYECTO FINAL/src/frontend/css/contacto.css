@@ -4,11 +4,12 @@
 
 .contacto-hero {
     padding: 170px var(--page-padding) 60px;
-    background: linear-gradient(270deg, var(--primary-accent) 23%, rgba(0, 0, 0, 1) 75%);
+    background: linear-gradient(270deg, var(--primary-accent) 25%, rgba(0, 0, 0, 1) 85%);
 }
 
 .contacto-hero-content {
     max-width: 900px;
+    margin: 0 auto;
 }
 
 .contacto-hero-title {
@@ -31,4 +32,14 @@
     .contacto-hero {
         padding: 130px 20px 40px;
     }
+}
+
+/* ===== MODO CLARO ===== */
+html[data-theme="light"] .contacto-hero {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.15) 25%, #f7f6f1 85%);
+}
+
+html[data-theme="light"] .contacto-hero-title,
+html[data-theme="light"] .contacto-hero-desc {
+    color: #1c1c12;
 }

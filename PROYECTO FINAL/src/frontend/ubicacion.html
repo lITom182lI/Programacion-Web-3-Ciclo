@@ -69,8 +69,11 @@
         <!-- ========== HERO UBICACIONES ========== -->
         <section class="ubicacion-hero">
             <div class="ubicacion-hero-content">
-                <h1 class="ubicacion-hero-title">MC UBICACIONES</h1>
-                <a href="#proximamente" class="ubicacion-pill">Explorar ubicaciones</a>
+                <h1 class="hero-mc">MC</h1>
+                <h2 class="hero-backpack">UBICACIONES</h2>
+                <div style="margin-top: 32px;">
+                    <a href="#proximamente" class="btn-explore" role="button">Explorar ubicaciones</a>
+                </div>
             </div>
         </section>
 
@@ -96,9 +99,11 @@
         <!-- ========== PRÓXIMAMENTE / EVENTOS ========== -->
         <section id="proximamente" class="ubicacion-proximamente">
             <div class="ubicacion-proximamente-content">
-                <span class="ubicacion-label">PROXIMAMENTE</span>
-                <h2 class="ubicacion-proximamente-title">¡TE ESPERAMOS!</h2>
-                <p class="ubicacion-proximamente-desc">¡Muy pronto estaremos presentes en diversas ferias y eventos!</p>
+                <div class="ubicacion-proximamente-header">
+                    <span class="ubicacion-label">PROXIMAMENTE</span>
+                    <h2 class="ubicacion-proximamente-title">¡TE ESPERAMOS!</h2>
+                    <p class="ubicacion-proximamente-desc">¡Muy pronto estaremos presentes en diversas ferias y eventos!</p>
+                </div>
 
                 <ul class="ubicacion-eventos">
                     <li class="evento-card">
@@ -117,7 +122,12 @@
             </div>
             <div class="ubicacion-mapa">
                 <span class="ubicacion-mapa-label">MAPA</span>
-                <img src="assets/nosotros_producto.png" alt="Mapa de ubicación" loading="lazy">
+                <iframe
+                    src="https://www.google.com/maps?q=Av.+Daniel+Hern%C3%A1ndez+260,+San+Isidro+15073,+Lima,+Per%C3%BA&output=embed"
+                    title="Mapa de ubicación de eventos"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
             </div>
         </section>
 
