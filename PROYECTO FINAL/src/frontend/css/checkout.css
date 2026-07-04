@@ -252,8 +252,15 @@ html[data-theme="light"] .checkout-summary {
 
 html[data-theme="light"] .checkout-summary-title,
 html[data-theme="light"] .checkout-summary-item-name,
-html[data-theme="light"] .checkout-totals-row {
+html[data-theme="light"] .checkout-confirm-text {
     color: #1c1c12;
+}
+
+@media (max-width: 768px) {
+    .checkout-confirm-page {
+        min-height: auto;
+        padding: 120px 20px 40px;
+    }
 }
 
 html[data-theme="light"] .checkout-summary-totals {
@@ -313,7 +320,7 @@ html[data-theme="light"] .checkout-step-sep {
 .checkout-confirm-title {
     font-family: var(--font-accent);
     font-weight: 800;
-    font-size: clamp(28px, 4vw, 44px);
+    font-size: clamp(22px, 4vw, 44px);
     color: var(--white);
     margin-bottom: 16px;
 }

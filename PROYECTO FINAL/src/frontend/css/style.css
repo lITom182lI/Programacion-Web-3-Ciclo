@@ -251,16 +251,16 @@ img {
 
 .hero-mc {
     font-family: var(--font-heading);
-    font-size: clamp(100px, 14vw, 200px);
+    font-size: clamp(60px, 14vw, 200px);
     color: var(--primary-light);
     line-height: 1;
-    margin-bottom: -20px;
+    margin-bottom: -10px;
 }
 
 .hero-backpack {
     font-family: var(--font-brand);
     font-weight: 800;
-    font-size: clamp(60px, 8vw, 128px);
+    font-size: clamp(36px, 8vw, 128px);
     letter-spacing: 0.15em;
     color: var(--white);
     line-height: 1.1;
@@ -304,7 +304,8 @@ img {
 
 .hero-categories {
     display: flex;
-    gap: 80px;
+    flex-wrap: wrap;
+    gap: clamp(20px, 5vw, 80px);
     justify-content: center;
     padding: 40px var(--page-padding);
     margin-top: auto;
@@ -325,6 +326,8 @@ img {
     background-color: var(--primary);
     padding: 20px var(--page-padding);
     display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
     align-items: center;
     justify-content: space-between;
 }
@@ -332,8 +335,9 @@ img {
 .badge-text {
     font-family: var(--font-accent);
     font-weight: 800;
-    font-size: 32px;
+    font-size: clamp(20px, 4vw, 32px);
     color: var(--white);
+    text-align: center;
 }
 
 .btn-explore {
@@ -457,7 +461,8 @@ img {
 .product-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    padding: 10px; /* Añade un poco de espacio para que no toque los bordes */
 }
 
 /* Badge tags */
@@ -1154,7 +1159,255 @@ html[data-theme="light"] .contact-submit-btn {
     background-color: #1c1c12;
     color: #f7f6f1;
 }
+        padding: 40px 20px;
+    }
+}
+
+/* ===== BÚSQUEDA EN NAVBAR ===== */
+.navbar-search-wrap {
+    position: relative;
+}
+
+.nav-icon-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.navbar-search-form {
+    position: absolute;
+    top: calc(100% + 16px);
+    right: 0;
+    display: none;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid var(--primary-light);
+    border-radius: 12px;
+    padding: 8px;
+    width: 280px;
+    z-index: 1001;
+}
+
+.navbar-search-form.show {
+    display: flex;
+}
+
+.navbar-search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 14px;
+    padding: 6px 8px;
+}
+
+.navbar-search-input::placeholder {
+    color: var(--grey-light);
+}
+
+.navbar-search-submit {
+    background-color: var(--primary-light);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* ===== TOGGLE MODO CLARO ===== */
+.theme-toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    color: var(--white);
+    font-size: 20px;
+    line-height: 1;
+}
+
+.theme-icon-light {
+    display: none;
+}
+
+html[data-theme="light"] .theme-icon-dark {
+    display: none;
+}
+
+html[data-theme="light"] .theme-icon-light {
+    display: inline;
+}
+
+/* =========================================================
+   MODO CLARO (híbrido): navbar, heroes y bloques de marca
+   (footer, newsletter, badge) permanecen oscuros como en el
+   Figma. Solo las secciones de contenido cambian a fondo claro.
+   ========================================================= */
+html[data-theme="light"] body {
+    background-color: #f7f6f1;
+}
+
+html[data-theme="light"] .section-products {
+    background-color: #f7f6f1;
+}
+
+html[data-theme="light"] .search-input {
+    color: #1c1c12;
+}
+
+html[data-theme="light"] .search-input::placeholder {
+    color: #8a8a7a;
+}
+
+html[data-theme="light"] .filter-btn {
+    color: #1c1c12;
+    border-color: #1c1c12;
+}
+
+html[data-theme="light"] .filter-btn.active,
+html[data-theme="light"] .filter-btn:hover {
+    background-color: #1c1c12;
+    color: #f7f6f1;
+}
+
+/* ===== MODO CLARO: Navbar ===== */
+html[data-theme="light"] .navbar-custom {
+    background-color: rgba(247, 246, 241, 0.9);
+}
+
+html[data-theme="light"] .logo-circle {
+    border-color: rgba(28, 28, 18, 0.6);
+}
+
+html[data-theme="light"] .logo-text {
+    color: #1c1c12;
+}
+
+html[data-theme="light"] .nav-link-custom {
+    color: #1c1c12;
+}
+
+html[data-theme="light"] .nav-link-custom:hover {
+    color: var(--primary-light);
+}
+
+html[data-theme="light"] .nav-link-custom.active {
+    color: var(--white);
+}
+
+html[data-theme="light"] .hamburger span {
+    background: #1c1c12;
+}
+
+html[data-theme="light"] .navbar-links.show {
+    background: rgba(247, 246, 241, 0.97);
+}
+
+html[data-theme="light"] .nav-icon {
+    filter: invert(1);
+}
+
+html[data-theme="light"] .theme-toggle-btn {
+    color: #1c1c12 !important;
+}
+
+html[data-theme="light"] .navbar-search-form {
+    background-color: #ffffff;
+    border-color: var(--primary-light);
+}
+
+html[data-theme="light"] .navbar-search-input {
+    color: #1c1c12;
+}
+
+html[data-theme="light"] .navbar-search-input::placeholder {
+    color: #8a8a7a;
+}
+
+/* ===== MODO CLARO: Contacto ===== */
+html[data-theme="light"] .contact-section {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.15) 25%, #f7f6f1 85%);
+}
+
+html[data-theme="light"] .contact-title,
+html[data-theme="light"] .form-label {
+    color: #1c1c12;
+}
+
+html[data-theme="light"] .form-input {
+    color: #1c1c12;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="light"] .form-input:focus {
+    border-color: #1c1c12;
+}
+
+html[data-theme="light"] .contact-submit-btn {
+    background-color: #1c1c12;
+    color: #f7f6f1;
+}
 
 html[data-theme="light"] .contact-submit-btn:hover {
     background-color: #333322;
+}
+/* =========================================================
+   RESPONSIVE DESIGN (Pantallas móviles y tablets)
+   ========================================================= */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        padding-top: 100px;
+    }
+    .hero-mc {
+        font-size: 52px !important;
+        margin-bottom: -5px !important;
+    }
+    .hero-backpack {
+        font-size: 28px !important;
+        letter-spacing: 0.1em;
+    }
+    .hero-description {
+        font-size: 14px;
+        margin-top: 12px;
+        line-height: 1.4;
+    }
+    .hero-link { font-size: 16px; }
+    .hero-arrow { font-size: 20px; }
+    .hero-categories {
+        margin-top: 30px !important; 
+        flex-direction: row;
+        justify-content: center;
+        gap: 8px !important;
+        padding: 15px var(--page-padding) !important;
+    }
+    .category-pill {
+        font-size: 13px;
+        background: rgba(255, 255, 255, 0.15);
+        padding: 6px 14px;
+        border-radius: 20px;
+    }
+    .hero-badge {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px var(--page-padding);
+        gap: 12px;
+        margin-top: 15px;
+        width: 100%;
+    }
+    .badge-text { font-size: 18px !important; }
+    .btn-explore {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .section-title { font-size: 28px !important; }
 }
