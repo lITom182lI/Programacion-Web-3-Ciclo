@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MC Backpack - Ubicaciones. Av. Daniel Hernández 260, San Isidro. Próximas ferias y eventos.">
+    <title>Ubicación - MC BACKPACK</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700;800&family=Monoton&family=Montserrat:wght@300;400;500;600;800;900&family=Questrial&family=Raleway:wght@600;800;900&family=Quando&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/ubicacion.css">
+</head>
+<body>
+    <a href="#main-content" class="visually-hidden-focusable">Saltar al contenido principal</a>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar-custom" aria-label="Navegación Principal">
+        <div class="navbar-inner">
+            <div class="navbar-logo">
+                <a href="index.html" aria-label="Ir al inicio">
+                    <div class="logo-circle">
+                        <span class="logo-text">MC</span>
+                    </div>
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="navbar-links" id="navbarLinks">
+                <li><a href="index.html" class="nav-link-custom">Inicio</a></li>
+                <li><a href="tienda.html" class="nav-link-custom">Tienda</a></li>
+                <li><a href="nosotros.html" class="nav-link-custom">Sobre</a></li>
+                <li><a href="contacto.html" class="nav-link-custom">Contacto</a></li>
+                <li><a href="ubicacion.html" class="nav-link-custom active" aria-current="page">Ubicación</a></li>
+            </ul>
+            <div class="navbar-icons">
+                <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="Cambiar a modo claro">
+                    <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9728;</span>
+                    <span class="theme-icon theme-icon-light" aria-hidden="true">&#9789;</span>
+                </button>
+                <div class="navbar-search-wrap">
+                    <button type="button" class="nav-icon-btn" id="searchToggle" aria-label="Buscar" aria-expanded="false">
+                        <img src="assets/icon_search.png" alt="" class="nav-icon nav-icon-sm">
+                    </button>
+                    <form class="navbar-search-form" id="navbarSearchForm" role="search">
+                        <input type="search" id="navbarSearchInput" class="navbar-search-input" placeholder="Buscar productos..." aria-label="Buscar productos">
+                        <button type="submit" class="navbar-search-submit" aria-label="Buscar">&#8594;</button>
+                    </form>
+                </div>
+                <a href="registro.html" aria-label="Mi cuenta"><img src="assets/icon_user.png" alt="Usuario" class="nav-icon nav-icon-md"></a>
+                <button type="button" class="nav-cart-btn" id="cartToggle" aria-label="Carrito de compras">
+                    <img src="assets/icon_cart.png" alt="Carrito" class="nav-icon nav-icon-lg">
+                    <span class="cart-badge d-none" id="cartBadge">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- ========== HERO UBICACIONES ========== -->
+        <section class="ubicacion-hero">
+            <div class="ubicacion-hero-content">
+                <h1 class="hero-mc">MC</h1>
+                <h2 class="hero-backpack">UBICACIONES</h2>
+                <div style="margin-top: 32px;">
+                    <a href="#proximamente" class="btn-explore" role="button">Explorar ubicaciones</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== INFO DE TIENDA ========== -->
+        <section class="ubicacion-info">
+            <div class="ubicacion-info-grid">
+                <div class="ubicacion-info-img">
+                    <iframe
+                        src="https://www.google.com/maps?q=Av.+Daniel+Hern%C3%A1ndez+260,+San+Isidro+15073,+Lima,+Per%C3%BA&output=embed"
+                        title="Mapa de ubicación de la tienda MC Backpack"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="ubicacion-info-text">
+                    <h2 class="ubicacion-info-heading">Tienda principal</h2>
+                    <p class="ubicacion-address">Av. Daniel Hernández 260, San Isidro 15073</p>
+                    <p class="ubicacion-schedule">HORARIO: 09:00 AM - 10:00 PM (L - M - M - J - V - S - D)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PRÓXIMAMENTE / EVENTOS ========== -->
+        <section id="proximamente" class="ubicacion-proximamente">
+            <div class="ubicacion-proximamente-content">
+                <div class="ubicacion-proximamente-header">
+                    <span class="ubicacion-label">PROXIMAMENTE</span>
+                    <h2 class="ubicacion-proximamente-title">¡TE ESPERAMOS!</h2>
+                    <p class="ubicacion-proximamente-desc">¡Muy pronto estaremos presentes en diversas ferias y eventos!</p>
+                </div>
+
+                <ul class="ubicacion-eventos">
+                    <li class="evento-card">
+                        <span class="evento-nombre">Artesanal de Lima</span>
+                        <span class="evento-fecha">15 - 17 de agosto de 2026</span>
+                    </li>
+                    <li class="evento-card">
+                        <span class="evento-nombre">Expo Emprendedores</span>
+                        <span class="evento-fecha">5 - 7 de septiembre de 2026</span>
+                    </li>
+                    <li class="evento-card">
+                        <span class="evento-nombre">Feria de Moda y Accesorios</span>
+                        <span class="evento-fecha">20 - 22 de octubre de 2026</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="ubicacion-mapa">
+                <span class="ubicacion-mapa-label">MAPA</span>
+                <iframe
+                    src="https://www.google.com/maps?q=Av.+Daniel+Hern%C3%A1ndez+260,+San+Isidro+15073,+Lima,+Per%C3%BA&output=embed"
+                    title="Mapa de ubicación de eventos"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- ========== NEWSLETTER ========== -->
+        <section class="newsletter-section">
+            <div class="newsletter-container">
+                <h2 class="newsletter-title">¡Suscríbete a nuestro boletín de novedades!</h2>
+                <p class="newsletter-desc">Recibe descuentos, alertas de nuevos productos, ediciones limitadas y más.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="newsletter-input-group">
+                        <input type="email" class="newsletter-input" placeholder="tu@email.com" aria-label="Correo para newsletter" required>
+                        <button type="submit" class="newsletter-btn">ENVIAR</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3 class="footer-brand">MC BACKPACK</h3>
+                <p class="footer-slogan">Carga tus metas, nosotros ponemos la resistencia.</p>
+                <div class="footer-socials">
+                    <a href="ubicacion.html" aria-label="Ubicación"><img src="assets/icon_ubicacion-433143.png" alt="Ubicación" class="social-icon"></a>
+                    <a href="#" aria-label="Facebook"><img src="assets/icon_facebook-1d6074.png" alt="Facebook" class="social-icon"></a>
+                    <a href="#" aria-label="Instagram"><img src="assets/icon_instagram-e0a1a.png" alt="Instagram" class="social-icon"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <h4 class="footer-heading">MARCA</h4>
+                <ul class="footer-links">
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Envíos</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="terminos.html">Términos</a></li>
+                    <li><a href="politicas.html">Políticas</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top d-none" aria-label="Volver arriba">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/ubicacion.js"></script>
+</body>
+</html>

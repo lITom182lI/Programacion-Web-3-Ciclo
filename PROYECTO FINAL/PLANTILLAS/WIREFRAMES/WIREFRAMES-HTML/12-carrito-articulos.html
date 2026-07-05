@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <title>Wireframe 12 — Carrito con Artículos | MC BACKPACK</title>
+  <link rel="stylesheet" href="wireframe-kit.css">
+</head>
+<body class="page-wrap">
+
+  <header class="wf-header">
+    <div class="container header-inner">
+      <div class="wf-logo">MC BACKPACK</div>
+      <nav class="wf-nav">
+        <a href="01-inicio.html">Inicio</a>
+        <a href="02-tienda.html">Tienda</a>
+        <a href="04-nosotros.html">Sobre</a>
+        <a href="05-contacto.html">Contacto</a>
+        <a href="16-ubicacion.html">Ubicación</a>
+      </nav>
+      <div class="wf-icons">
+        <div class="wf-icon">🔍</div>
+        <div class="wf-icon">👤</div>
+        <div class="wf-icon">🛒</div>
+      </div>
+    </div>
+  </header>
+
+  <div style="display:flex; min-height:calc(100vh - 65px);">
+
+    <!-- Zona principal (izquierda, oscurecida) -->
+    <div style="flex:1; background:#e8e8e8; display:flex; align-items:center; justify-content:center;">
+      <div style="color:#aaa; font-size:0.9rem;">[Contenido de la página detrás del panel]</div>
+    </div>
+
+    <!-- Panel Carrito Lateral con artículos -->
+    <div class="wf-cart-panel" style="width:540px; min-height:100%; border-radius:0; border-left:2px solid #ccc; display:flex; flex-direction:column;">
+
+      <div class="flex-between mb-16">
+        <div class="wf-h2">...artículos</div>
+        <div style="cursor:pointer; font-size:1.2rem; color:#888;">✕</div>
+      </div>
+
+      <!-- Banner promocional -->
+      <div class="wf-banner">¡Gasta S/. 215.00 más y obtén el envío gratuito!</div>
+
+      <!-- Logo MC -->
+      <div class="flex-center" style="padding:16px 0;">
+        <div class="wf-auth-logo-circle" style="width:60px; height:60px; font-size:1.1rem;">MC</div>
+      </div>
+
+      <hr style="border:none; border-top:1px solid #ddd; margin:8px 0 16px;">
+
+      <!-- Item del carrito -->
+      <div class="wf-cart-item">
+        <div class="wf-cart-item-img">
+          <div class="ph-img" style="width:110px; height:110px; border-radius:8px;"></div>
+        </div>
+        <div class="wf-cart-item-details">
+          <div style="font-size:0.9rem; font-weight:700; line-height:1.4;">Harry Styles - Harry's House<br><small style="font-weight:400;">(White, Corea)</small></div>
+          <div style="font-size:1rem; font-weight:900; margin-top:6px;">S/ 60.00</div>
+          <div class="wf-qty-row">
+            <button class="wf-qty-btn">−</button>
+            <div class="wf-qty-val">1</div>
+            <button class="wf-qty-btn">+</button>
+            <a href="#" style="font-size:0.72rem; color:#888; margin-left:12px; text-decoration:underline;">Eliminar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Más items placeholder -->
+      <div class="wf-cart-item">
+        <div class="wf-cart-item-img">
+          <div class="ph-img" style="width:110px; height:110px; border-radius:8px;"></div>
+        </div>
+        <div class="wf-cart-item-details">
+          <div style="font-size:0.9rem; font-weight:700;">[Producto]</div>
+          <div style="font-size:1rem; font-weight:900; margin-top:6px;">S/ —</div>
+          <div class="wf-qty-row">
+            <button class="wf-qty-btn">−</button>
+            <div class="wf-qty-val">1</div>
+            <button class="wf-qty-btn">+</button>
+            <a href="#" style="font-size:0.72rem; color:#888; margin-left:12px; text-decoration:underline;">Eliminar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Total y botón -->
+      <div class="wf-cart-total" style="margin-top:auto; padding-top:16px; border-top:2px solid #ccc;">
+        <div class="flex-between mb-8">
+          <span style="font-size:0.85rem; font-weight:700;">TOTAL:</span>
+          <span style="font-size:1rem; font-weight:900;">S/ —</span>
+        </div>
+        <div style="font-size:0.72rem; color:#aaa; margin-bottom:16px;">Envío e impuestos calculados en el momento de la compra</div>
+        <a href="14-pagar-formulario.html" class="wf-btn wf-btn-full" style="display:block; padding:14px; text-align:center; letter-spacing:0.1em;">PAGAR</a>
+      </div>
+
+      <hr style="border:none; border-top:1px solid #ddd; margin:16px 0;">
+      <div style="font-size:0.72rem; color:#aaa; text-align:center; padding-bottom:16px;">
+        Si continúas, aceptas nuestros
+        <a href="09-terminos.html" style="color:#555; text-decoration:underline;">Términos del servicio</a>
+        y la
+        <a href="10-politicas.html" style="color:#555; text-decoration:underline;">Política de privacidad</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

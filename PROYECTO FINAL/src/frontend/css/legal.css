@@ -1,0 +1,95 @@
+/* =========================================================
+   MC BACKPACK – Páginas legales (Términos / Políticas)
+   ========================================================= */
+
+.legal-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 150px var(--page-padding) 80px;
+}
+
+.legal-breadcrumb {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--grey-light);
+    margin-bottom: 16px;
+}
+
+.legal-breadcrumb a {
+    color: var(--primary-light);
+}
+
+.legal-title {
+    font-family: var(--font-accent);
+    font-weight: 800;
+    font-size: clamp(28px, 4vw, 44px);
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.legal-intro {
+    font-family: var(--font-quando);
+    font-size: 16px;
+    color: var(--grey-light);
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.legal-block {
+    margin-bottom: 32px;
+}
+
+.legal-heading {
+    font-family: var(--font-primary);
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--primary-light);
+    margin-bottom: 10px;
+}
+
+.legal-text {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--white);
+    line-height: 1.7;
+}
+
+.legal-cross-link {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--grey-light);
+    margin-top: 40px;
+}
+
+.legal-cross-link a {
+    color: var(--primary-light);
+    text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+    .legal-section {
+        padding: 120px 20px 60px;
+    }
+}
+
+/* ===== MODO CLARO ===== */
+html[data-theme="light"] .legal-section {
+    background-color: #f7f6f1;
+}
+
+html[data-theme="light"] .legal-breadcrumb {
+    color: #5a5a4d;
+}
+
+html[data-theme="light"] .legal-title {
+    color: #1c1c12;
+}
+
+html[data-theme="light"] .legal-intro,
+html[data-theme="light"] .legal-cross-link {
+    color: #5a5a4d;
+}
+
+html[data-theme="light"] .legal-text {
+    color: #1c1c12;
+}

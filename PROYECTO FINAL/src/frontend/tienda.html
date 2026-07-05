@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/tienda.css">
 </head>
 <body>
@@ -38,13 +39,28 @@
                 <li><a href="index.html" class="nav-link-custom">Inicio</a></li>
                 <li><a href="tienda.html" class="nav-link-custom active" aria-current="page">Tienda</a></li>
                 <li><a href="nosotros.html" class="nav-link-custom">Sobre</a></li>
-                <li><a href="index.html#contacto" class="nav-link-custom">Contacto</a></li>
-                <li><a href="#" class="nav-link-custom">Ubicación</a></li>
+                <li><a href="contacto.html" class="nav-link-custom">Contacto</a></li>
+                <li><a href="ubicacion.html" class="nav-link-custom">Ubicación</a></li>
             </ul>
             <div class="navbar-icons">
-                <a href="#" aria-label="Buscar"><img src="assets/icon_search.png" alt="Buscar" class="nav-icon nav-icon-sm"></a>
-                <a href="#" aria-label="Mi cuenta"><img src="assets/icon_user.png" alt="Usuario" class="nav-icon nav-icon-md"></a>
-                <a href="#" aria-label="Carrito de compras"><img src="assets/icon_cart.png" alt="Carrito" class="nav-icon nav-icon-lg"></a>
+                <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="Cambiar a modo claro">
+                    <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9728;</span>
+                    <span class="theme-icon theme-icon-light" aria-hidden="true">&#9789;</span>
+                </button>
+                <div class="navbar-search-wrap">
+                    <button type="button" class="nav-icon-btn" id="searchToggle" aria-label="Buscar" aria-expanded="false">
+                        <img src="assets/icon_search.png" alt="" class="nav-icon nav-icon-sm">
+                    </button>
+                    <form class="navbar-search-form" id="navbarSearchForm" role="search">
+                        <input type="search" id="navbarSearchInput" class="navbar-search-input" placeholder="Buscar productos..." aria-label="Buscar productos">
+                        <button type="submit" class="navbar-search-submit" aria-label="Buscar">&#8594;</button>
+                    </form>
+                </div>
+                <a href="registro.html" aria-label="Mi cuenta"><img src="assets/icon_user.png" alt="Usuario" class="nav-icon nav-icon-md"></a>
+                <button type="button" class="nav-cart-btn" id="cartToggle" aria-label="Carrito de compras">
+                    <img src="assets/icon_cart.png" alt="Carrito" class="nav-icon nav-icon-lg">
+                    <span class="cart-badge d-none" id="cartBadge">0</span>
+                </button>
             </div>
         </div>
     </nav>
@@ -62,7 +78,10 @@
             <div class="tienda-layout">
                 <!-- Sidebar Filtros -->
                 <aside class="tienda-sidebar" aria-label="Filtros de productos">
-                    <h2 class="sidebar-label">CATEGORÍA</h2>
+                    <h2 class="sidebar-label">BUSCAR</h2>
+                    <input type="search" id="shopSearchInput" class="sidebar-search-input" placeholder="Buscar por nombre..." aria-label="Buscar productos por nombre">
+
+                    <h2 class="sidebar-label sidebar-label-mt">CATEGORÍA</h2>
 
                     <div class="sidebar-tags">
                         <button class="tag-btn tag-active" data-filter="all">Todos</button>
@@ -84,7 +103,7 @@
                 <!-- Product Grid -->
                 <div class="tienda-grid" id="tiendaGrid">
                     <!-- Row 1 -->
-                    <article class="shop-card shop-item" data-category="mochilas" data-price="45">
+                    <article class="shop-card shop-item" data-category="mochilas" data-price="45" data-id="tienda-hades">
                         <div class="shop-img-wrap">
                             <img src="assets/tienda_hades-619f96.png" alt="Mochila HADES" class="shop-img" loading="lazy">
                         </div>
@@ -95,10 +114,11 @@
                                 <span class="shop-price">S/ 45.00</span>
                                 <span class="shop-cat">Mochilas</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
 
-                    <article class="shop-card shop-item" data-category="carteras" data-price="98">
+                    <article class="shop-card shop-item" data-category="carteras" data-price="98" data-id="tienda-lux">
                         <div class="shop-img-wrap">
                             <img src="assets/tienda_lux-c533ba.png" alt="Cartera LUX" class="shop-img" loading="lazy">
                         </div>
@@ -109,10 +129,11 @@
                                 <span class="shop-price">S/ 98.00</span>
                                 <span class="shop-cat">Carteras</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
 
-                    <article class="shop-card shop-item" data-category="accesorios" data-price="17">
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="17" data-id="tienda-snoopy">
                         <div class="shop-img-wrap">
                             <img src="assets/tienda_snoopy-22756a.png" alt="Snoopy llavero" class="shop-img" loading="lazy">
                         </div>
@@ -123,10 +144,11 @@
                                 <span class="shop-price">S/ 17.00</span>
                                 <span class="shop-cat">Accesorios</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
 
-                    <article class="shop-card shop-item" data-category="accesorios" data-price="20">
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="20" data-id="tienda-creeper">
                         <div class="shop-img-wrap">
                             <img src="assets/mochila3.png" alt="Creeper Minecraft" class="shop-img" loading="lazy">
                         </div>
@@ -137,11 +159,12 @@
                                 <span class="shop-price">S/ 20.00</span>
                                 <span class="shop-cat">Accesorios</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
 
                     <!-- Row 2 -->
-                    <article class="shop-card shop-item" data-category="accesorios" data-price="5">
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="5" data-id="tienda-pines">
                         <div class="shop-img-wrap">
                             <img src="assets/tienda_pines.png" alt="Pines" class="shop-img" loading="lazy">
                         </div>
@@ -152,10 +175,11 @@
                                 <span class="shop-price">S/ 5.00</span>
                                 <span class="shop-cat">Accesorios</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
 
-                    <article class="shop-card shop-item" data-category="accesorios" data-price="10">
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="10" data-id="tienda-gatitos">
                         <div class="shop-img-wrap">
                             <img src="assets/tienda_gatitos-526597.png" alt="Gatitos cute" class="shop-img" loading="lazy">
                         </div>
@@ -166,10 +190,11 @@
                                 <span class="shop-price">S/ 10.00</span>
                                 <span class="shop-cat">Accesorios</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
 
-                    <article class="shop-card shop-item" data-category="accesorios" data-price="11">
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="11" data-id="tienda-cartuchera-gato">
                         <div class="shop-img-wrap">
                             <img src="assets/articulo2-4973ae.png" alt="Cartuchera de Gato" class="shop-img" loading="lazy">
                         </div>
@@ -180,10 +205,11 @@
                                 <span class="shop-price">S/ 11.00</span>
                                 <span class="shop-cat">Accesorios</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
 
-                    <article class="shop-card shop-item" data-category="mochilas" data-price="50">
+                    <article class="shop-card shop-item" data-category="mochilas" data-price="50" data-id="tienda-tropicoqueta">
                         <div class="shop-img-wrap">
                             <img src="assets/mochila4.png" alt="Tropicoqueta" class="shop-img" loading="lazy">
                         </div>
@@ -194,11 +220,12 @@
                                 <span class="shop-price">S/ 50.00</span>
                                 <span class="shop-cat">Mochilas</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
 
                     <!-- Row 3 -->
-                    <article class="shop-card shop-item" data-category="carteras" data-price="65">
+                    <article class="shop-card shop-item" data-category="carteras" data-price="65" data-id="tienda-jack-leopards">
                         <div class="shop-img-wrap">
                             <img src="assets/cartera3-151d4b.png" alt="Jack Leopards Mug" class="shop-img" loading="lazy">
                         </div>
@@ -209,10 +236,11 @@
                                 <span class="shop-price">S/ 65.00</span>
                                 <span class="shop-cat">Carteras</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
 
-                    <article class="shop-card shop-item" data-category="mochilas" data-price="28">
+                    <article class="shop-card shop-item" data-category="mochilas" data-price="28" data-id="tienda-the-album">
                         <div class="shop-img-wrap">
                             <img src="assets/cartera2-5ad179.png" alt="THE ALBUM" class="shop-img" loading="lazy">
                         </div>
@@ -223,10 +251,11 @@
                                 <span class="shop-price">S/ 28.00</span>
                                 <span class="shop-cat">Mochilas</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
 
-                    <article class="shop-card shop-item" data-category="accesorios" data-price="35">
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="35" data-id="tienda-charizard">
                         <div class="shop-img-wrap">
                             <img src="assets/articulo1.png" alt="Charizard" class="shop-img" loading="lazy">
                         </div>
@@ -237,10 +266,11 @@
                                 <span class="shop-price">S/ 35.00</span>
                                 <span class="shop-cat">Accesorios</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
 
-                    <article class="shop-card shop-item" data-category="carteras" data-price="105">
+                    <article class="shop-card shop-item" data-category="carteras" data-price="105" data-id="tienda-k23-deluxe">
                         <div class="shop-img-wrap">
                             <img src="assets/cartera1-392919.png" alt="K-23 Deluxe" class="shop-img" loading="lazy">
                         </div>
@@ -251,11 +281,12 @@
                                 <span class="shop-price">S/ 105.00</span>
                                 <span class="shop-cat">Carteras</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
 
                     <!-- Row 4 -->
-                    <article class="shop-card shop-item" data-category="mochilas" data-price="37">
+                    <article class="shop-card shop-item" data-category="mochilas" data-price="37" data-id="tienda-pink-aura">
                         <div class="shop-img-wrap">
                             <img src="assets/mochila2-76f3c2.png" alt="Pink Aura" class="shop-img" loading="lazy">
                         </div>
@@ -266,10 +297,11 @@
                                 <span class="shop-price">S/ 37.00</span>
                                 <span class="shop-cat">Mochilas</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
 
-                    <article class="shop-card shop-item" data-category="accesorios" data-price="100">
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="100" data-id="tienda-ositos-onigiri">
                         <div class="shop-img-wrap">
                             <img src="assets/mochila1.png" alt="Ositos onigiri" class="shop-img" loading="lazy">
                         </div>
@@ -280,10 +312,11 @@
                                 <span class="shop-price">S/ 100.00</span>
                                 <span class="shop-cat">Accesorios</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
 
-                    <article class="shop-card shop-item" data-category="accesorios" data-price="25">
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="25" data-id="tienda-cartuchera-basica">
                         <div class="shop-img-wrap">
                             <img src="assets/articulo3-154dcc.png" alt="Cartuchera Básica" class="shop-img" loading="lazy">
                         </div>
@@ -294,10 +327,11 @@
                                 <span class="shop-price">S/ 25.00</span>
                                 <span class="shop-cat">Accesorios</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
 
-                    <article class="shop-card shop-item" data-category="accesorios" data-price="75">
+                    <article class="shop-card shop-item" data-category="accesorios" data-price="75" data-id="tienda-next">
                         <div class="shop-img-wrap">
                             <img src="assets/articulo4.png" alt="Next" class="shop-img" loading="lazy">
                         </div>
@@ -308,6 +342,7 @@
                                 <span class="shop-price">S/ 75.00</span>
                                 <span class="shop-cat">Accesorios</span>
                             </div>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
                         </div>
                     </article>
                 </div>
@@ -322,7 +357,7 @@
                 <h3 class="footer-brand">MC BACKPACK</h3>
                 <p class="footer-slogan">Carga tus metas, nosotros ponemos la resistencia.</p>
                 <div class="footer-socials">
-                    <a href="#" aria-label="Ubicación"><img src="assets/icon_ubicacion-433143.png" alt="Ubicación" class="social-icon"></a>
+                    <a href="ubicacion.html" aria-label="Ubicación"><img src="assets/icon_ubicacion-433143.png" alt="Ubicación" class="social-icon"></a>
                     <a href="#" aria-label="Facebook"><img src="assets/icon_facebook-1d6074.png" alt="Facebook" class="social-icon"></a>
                     <a href="#" aria-label="Instagram"><img src="assets/icon_instagram-e0a1a.png" alt="Instagram" class="social-icon"></a>
                 </div>
@@ -331,9 +366,11 @@
                 <h4 class="footer-heading">MARCA</h4>
                 <ul class="footer-links">
                     <li><a href="nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="index.html#contacto">Contacto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                     <li><a href="#">Envíos</a></li>
                     <li><a href="#">Devoluciones</a></li>
+                    <li><a href="terminos.html">Términos</a></li>
+                    <li><a href="politicas.html">Políticas</a></li>
                 </ul>
             </div>
         </div>
@@ -342,6 +379,9 @@
     <button id="backToTop" class="back-to-top d-none" aria-label="Volver arriba">↑</button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/cart.js"></script>
     <script src="js/tienda.js"></script>
 </body>
 </html>

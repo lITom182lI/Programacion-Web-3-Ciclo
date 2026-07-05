@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <title>Wireframe 15 — PAGAR (Variante Facturación) | MC BACKPACK</title>
+  <link rel="stylesheet" href="wireframe-kit.css">
+</head>
+<body class="page-wrap">
+
+  <header class="wf-header">
+    <div class="container header-inner">
+      <div class="wf-logo">MC BACKPACK</div>
+      <nav class="wf-nav">
+        <a href="01-inicio.html">Inicio</a>
+        <a href="02-tienda.html">Tienda</a>
+        <a href="04-nosotros.html">Sobre</a>
+        <a href="05-contacto.html">Contacto</a>
+        <a href="16-ubicacion.html">Ubicación</a>
+      </nav>
+      <div class="wf-icons">
+        <div class="wf-icon">🔍</div>
+        <div class="wf-icon">👤</div>
+        <div class="wf-icon">🛒</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container mt-32">
+
+      <!-- Logo centrado -->
+      <div class="flex-center mb-16">
+        <div style="
+          width: 80px; height: 80px;
+          border: 2px solid var(--border);
+          border-radius: 50%;
+          display: flex; align-items: center; justify-content: center;
+          font-size: 1.5rem; font-weight: 900; color: var(--dark);
+          background: var(--ph-bg);
+        ">MC</div>
+      </div>
+
+      <div class="col-2-1">
+
+        <!-- Columna Izquierda: Formulario completo con facturación distinta -->
+        <div>
+
+          <!-- CONTACTO -->
+          <div class="wf-box">
+            <div class="flex-between mb-12">
+              <h3 style="border-bottom:none; margin-bottom:0; font-size:1.1rem;">Contacto</h3>
+              <a href="06-registro-1.html" style="color:var(--dark); text-decoration:underline; font-size:0.85rem;">Iniciar sesión</a>
+            </div>
+            <div class="wf-form-group">
+              <input class="wf-input" type="email" placeholder="Correo Electrónico">
+            </div>
+            <div class="wf-checkbox">
+              <input type="checkbox">
+              <span>Enviarme novedades y ofertas por correo electrónico</span>
+            </div>
+          </div>
+
+          <!-- ENTREGA -->
+          <div class="wf-box">
+            <h3 style="border-bottom:none; font-size:1.1rem; margin-bottom:12px;">Entrega</h3>
+            <div class="wf-form-group">
+              <select class="wf-select">
+                <option>País/Región</option>
+              </select>
+            </div>
+            <div class="wf-form-row">
+              <div class="wf-form-group">
+                <input class="wf-input" type="text" placeholder="Nombre">
+              </div>
+              <div class="wf-form-group">
+                <input class="wf-input" type="text" placeholder="Apellido">
+              </div>
+            </div>
+            <div class="wf-form-group">
+              <input class="wf-input" type="text" placeholder="DNI">
+            </div>
+            <div class="wf-form-group">
+              <input class="wf-input" type="text" placeholder="Dirección">
+            </div>
+            <div class="wf-form-group">
+              <input class="wf-input" type="text" placeholder="Casa, apartamento, etc (opcional)">
+            </div>
+            <div class="wf-form-row-3">
+              <div class="wf-form-group">
+                <input class="wf-input" type="text" placeholder="Código postal (opcional)">
+              </div>
+              <div class="wf-form-group">
+                <input class="wf-input" type="text" placeholder="Ciudad">
+              </div>
+              <div class="wf-form-group">
+                <select class="wf-select">
+                  <option>Región</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- MÉTODOS DE ENVÍO -->
+          <div class="wf-box">
+            <h3 style="border-bottom:none; font-size:1.1rem; margin-bottom:12px;">Métodos de envío</h3>
+            <div style="border:1px solid var(--border); border-radius:var(--radius); padding:16px; background:var(--light);">
+              <p style="font-size:0.85rem; color:var(--dark); margin:0;">Ingresa tu dirección de envío para ver los métodos disponibles.</p>
+            </div>
+          </div>
+
+          <!-- PAGO -->
+          <div class="wf-box">
+            <h3 style="border-bottom:none; font-size:1.1rem; margin-bottom:4px;">Pago</h3>
+            <p style="font-size:0.8rem; color:var(--mid); margin-bottom:16px;">Todas las transacciones son seguras y están encriptadas.</p>
+            
+            <div style="border:1px solid var(--border); border-radius:var(--radius); overflow:hidden;">
+              <div style="padding:16px; border-bottom:1px solid var(--border); background:var(--surface);">
+                <div style="font-weight:700; text-align:center;">Mercado Pago</div>
+              </div>
+              <div style="padding:24px 16px; background:var(--light); text-align:center;">
+                <p style="font-size:0.85rem; color:var(--dark); margin:0;">Se te redirigirá a Mercado Pago para que completes la compra.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- DIRECCIÓN DE FACTURACIÓN -->
+          <div class="wf-box" style="padding:0; overflow:hidden;">
+            <div style="padding:20px 20px 12px;">
+              <h3 style="border-bottom:none; font-size:1.1rem; margin-bottom:12px;">Dirección de facturación</h3>
+              
+              <div style="border:1px solid var(--border); border-radius:var(--radius); overflow:hidden;">
+                <!-- Opción 1: Misma dirección -->
+                <div style="padding:16px; border-bottom:1px solid var(--border);">
+                  <div class="wf-radio" style="margin-bottom:0;">
+                    <input type="radio" name="billing">
+                    <span style="font-size:0.9rem;">La misma dirección de envío</span>
+                  </div>
+                </div>
+                
+                <!-- Opción 2: Dirección distinta (Seleccionada) -->
+                <div style="padding:16px; background:var(--light); border-bottom:1px solid var(--border);">
+                  <div class="wf-radio" style="margin-bottom:0;">
+                    <input type="radio" name="billing" checked>
+                    <span style="font-size:0.9rem; font-weight:700;">Usar una dirección de facturación distinta</span>
+                  </div>
+                </div>
+                
+                <!-- Formulario desplegado para la dirección distinta -->
+                <div style="padding:20px; background:var(--light);">
+                  <div class="wf-form-group">
+                    <select class="wf-select">
+                      <option>País/Región</option>
+                    </select>
+                  </div>
+                  <div class="wf-form-row">
+                    <div class="wf-form-group">
+                      <input class="wf-input" type="text" placeholder="Nombre">
+                    </div>
+                    <div class="wf-form-group">
+                      <input class="wf-input" type="text" placeholder="Apellido">
+                    </div>
+                  </div>
+                  <div class="wf-form-group">
+                    <input class="wf-input" type="text" placeholder="DNI">
+                  </div>
+                  <div class="wf-form-group">
+                    <input class="wf-input" type="text" placeholder="Dirección">
+                  </div>
+                  <div class="wf-form-group">
+                    <input class="wf-input" type="text" placeholder="Casa, apartamento, etc (opcional)">
+                  </div>
+                  <div class="wf-form-row-3">
+                    <div class="wf-form-group">
+                      <input class="wf-input" type="text" placeholder="Ciudad">
+                    </div>
+                    <div class="wf-form-group">
+                      <select class="wf-select">
+                        <option>Región</option>
+                      </select>
+                    </div>
+                    <div class="wf-form-group">
+                      <input class="wf-input" type="text" placeholder="Código postal">
+                    </div>
+                  </div>
+                  <div class="wf-form-group" style="margin-bottom:0;">
+                    <input class="wf-input" type="tel" placeholder="Teléfono">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CHECKBOXES FINALES -->
+          <div style="padding:0 4px; margin-bottom:24px;">
+            <div class="wf-checkbox">
+              <input type="checkbox">
+              <span style="font-size:0.85rem;">Guardar mi información y consultar más rápidamente la próxima vez</span>
+            </div>
+            <div class="wf-checkbox">
+              <input type="checkbox">
+              <span style="font-size:0.85rem;">Enviarme novedades y ofertas por SMS</span>
+            </div>
+          </div>
+
+          <button class="wf-btn wf-btn-full wf-btn-lg" style="margin-bottom:60px;">Pagar ahora</button>
+
+        </div>
+
+        <!-- Columna Derecha: Resumen del Pedido -->
+        <div>
+          <div class="wf-box" style="position:sticky; top:100px;">
+            <h3 style="font-size:1.1rem;">Resumen del pedido</h3>
+            <div class="wf-cart-item">
+              <div class="ph-img" style="width:70px; height:70px; border-radius:8px; flex-shrink:0;"></div>
+              <div style="flex:1; padding-left:12px;">
+                <div style="font-size:0.85rem; font-weight:700;">[Producto]</div>
+                <div style="font-weight:900; margin-top:8px;">S/ —</div>
+              </div>
+            </div>
+            <hr style="border:none; border-top:1px solid var(--border); margin:16px 0;">
+            <div class="flex-between mb-8">
+              <span style="font-size:0.85rem;">Subtotal</span>
+              <span style="font-size:0.85rem; font-weight:700;">S/ —</span>
+            </div>
+            <div class="flex-between mb-16">
+              <span style="font-size:0.85rem;">Envío</span>
+              <span style="font-size:0.85rem; color:var(--mid);">Calculado</span>
+            </div>
+            <div class="flex-between" style="font-size:1.1rem; font-weight:900; padding-top:12px; border-top:2px solid var(--border);">
+              <span>Total</span>
+              <span>S/ —</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end col-2-1 -->
+    </div>
+  </main>
+
+</body>
+</html>
