@@ -10,7 +10,7 @@
     align-items: flex-end;
     overflow: hidden;
     padding-top: 90px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 1) 100%), url('../assets/hero-bg.png') center/cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 1) 100%), url('../assets/hero-bg.webp') center/cover no-repeat;
 }
 
 .nosotros-hero-content {
