@@ -42,11 +42,25 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `).join('');
 
-        const { subtotal, total } = calcTotals(currentCart);
+        const { subtotal } = calcTotals(currentCart);
+        let shippingCost = 15.00;
+        const shippingRadio = document.querySelector('input[name="shippingMethod"]:checked');
+        if (shippingRadio) {
+            if (shippingRadio.value === 'express') shippingCost = 25.00;
+            else if (shippingRadio.value === 'recojo') shippingCost = 0.00;
+            else shippingCost = 15.00;
+        }
+        
+        const total = subtotal + shippingCost;
+
         summaryTotals.innerHTML = `
             <div class="checkout-totals-row">
                 <span>Subtotal</span>
                 <span>S/ ${subtotal.toFixed(2)}</span>
+            </div>
+            <div class="checkout-totals-row">
+                <span>Envío</span>
+                <span>S/ ${shippingCost.toFixed(2)}</span>
             </div>
             <div class="checkout-totals-row checkout-total-main">
                 <span>TOTAL :</span>
@@ -56,6 +70,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     renderSummary();
+
+    // Actualizar resumen al cambiar de método de envío
+    const shippingRadios = document.querySelectorAll('input[name="shippingMethod"]');
+    if (shippingRadios.length > 0) {
+        shippingRadios.forEach(radio => {
+            radio.addEventListener('change', renderSummary);
+        });
+    }
 
     // Toggle de dirección de facturación
     const billingSame = document.getElementById('billingSame');
@@ -67,6 +89,25 @@ document.addEventListener('DOMContentLoaded', () => {
             billingAltForm.classList.toggle('d-none', !billingDifferent.checked);
         });
     });
+
+    // Toggle de método de pago
+    const paymentRadios = document.querySelectorAll('input[name="paymentMethod"]');
+    const paymentDetailsText = document.querySelector('#paymentDetails p');
+
+    if (paymentRadios.length > 0 && paymentDetailsText) {
+        paymentRadios.forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                const method = e.target.value;
+                if (method === 'tarjeta') {
+                    paymentDetailsText.textContent = 'Serás redirigido a la pasarela segura para completar tu pago con tarjeta. (Simulado)';
+                } else if (method === 'mercadopago') {
+                    paymentDetailsText.textContent = 'Serás redirigido a Mercado Pago para completar tu pago de forma segura. (Simulado)';
+                } else if (method === 'transferencia') {
+                    paymentDetailsText.textContent = 'Realiza el depósito al número 987654321 y envía el comprobante a nuestro WhatsApp. (Simulado)';
+                }
+            });
+        });
+    }
 
     // Envío del formulario
     if (checkoutForm) {
@@ -95,7 +136,16 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isValid) return;
 
             const currentCart = getCart();
-            const { total } = calcTotals(currentCart);
+            const { subtotal } = calcTotals(currentCart);
+            
+            let shippingCost = 15.00;
+            const shippingRadio = document.querySelector('input[name="shippingMethod"]:checked');
+            if (shippingRadio) {
+                if (shippingRadio.value === 'express') shippingCost = 25.00;
+                else if (shippingRadio.value === 'recojo') shippingCost = 0.00;
+                else shippingCost = 15.00;
+            }
+            const total = subtotal + shippingCost;
 
             const submitBtn = document.getElementById('checkoutSubmitBtn');
             const originalText = submitBtn.textContent;

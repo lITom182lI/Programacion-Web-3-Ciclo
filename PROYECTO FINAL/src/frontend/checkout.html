@@ -111,12 +111,42 @@
 
                         <fieldset class="checkout-fieldset">
                             <h2 class="checkout-fieldset-title">Métodos de Envío</h2>
-                            <p class="checkout-placeholder-text">Ingresa tu dirección para ver las opciones de envío disponibles.</p>
+                            <p style="margin-bottom: 15px; color: #ccc;">Selecciona tu opción de envío:</p>
+                            <label class="checkout-radio">
+                                <input type="radio" name="shippingMethod" value="regular" checked id="shipRegular">
+                                Envío Regular (3-5 días hábiles) - S/ 15.00
+                            </label>
+                            <label class="checkout-radio">
+                                <input type="radio" name="shippingMethod" value="express" id="shipExpress">
+                                Envío Express (1-2 días hábiles) - S/ 25.00
+                            </label>
+                            <label class="checkout-radio">
+                                <input type="radio" name="shippingMethod" value="recojo" id="shipRecojo">
+                                Recojo en Tienda - Gratis
+                            </label>
                         </fieldset>
 
                         <fieldset class="checkout-fieldset">
                             <h2 class="checkout-fieldset-title">Pago</h2>
-                            <p class="checkout-placeholder-text">Serás redirigido a Mercado Pago para completar tu pago de forma segura (simulado para este proyecto académico).</p>
+                            <p style="margin-bottom: 15px; color: #ccc;">Selecciona tu método de pago:</p>
+                            <label class="checkout-radio">
+                                <input type="radio" name="paymentMethod" value="tarjeta" checked id="payTarjeta">
+                                Tarjeta de Crédito / Débito
+                            </label>
+                            <label class="checkout-radio">
+                                <input type="radio" name="paymentMethod" value="mercadopago" id="payMercadoPago">
+                                Mercado Pago
+                            </label>
+                            <label class="checkout-radio">
+                                <input type="radio" name="paymentMethod" value="transferencia" id="payTransferencia">
+                                Transferencia Bancaria / Yape / Plin
+                            </label>
+
+                            <div id="paymentDetails" style="margin-top: 15px; padding: 15px; background-color: #2a2a2a; border-radius: 8px; border: 1px solid #333;">
+                                <p class="checkout-placeholder-text" style="margin: 0; font-size: 0.9em; text-align: left;">
+                                    Serás redirigido a la pasarela segura para completar tu pago. (Simulado)
+                                </p>
+                            </div>
                         </fieldset>
 
                         <fieldset class="checkout-fieldset">

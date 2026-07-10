@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": "1783715276398",
+    "cliente": {
+      "email": "g@c.com",
+      "nombre": "geradth",
+      "dni": "12345678",
+      "direccion": "qdw d1d1d 13",
+      "ciudad": "lima",
+      "codigoPostal": "12"
+    },
+    "items": [
+      {
+        "id": "mochila-2",
+        "name": "Ultraviolence",
+        "price": 60,
+        "img": "assets/mochila2-76f3c2.webp",
+        "origin": "Melanie Martínez",
+        "category": "mochilas",
+        "qty": 1
+      }
+    ],
+    "total": 60,
+    "fecha": "2026-07-10T20:27:56.398Z"
+  }
+]
